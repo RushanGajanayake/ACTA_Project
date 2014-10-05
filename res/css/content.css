@@ -1,0 +1,163 @@
+
+
+/* input data table */
+
+.table1{
+    padding: 20px;
+    margin-left: 30px;
+    border-style: none;
+
+    width: 45%;
+
+}
+.table1 .row1 .row_label{
+    width: 150px;
+    height: 33px;
+    /*margin-top: 10px;*/
+    padding-left: 10px;
+
+    font-family: Century Gothic;
+    font-size: 16px;
+    color: #373737;
+
+    background: #9dc6ec;
+    border-top: 3px solid #369dfc;
+    border-right: 15px solid #369dfc;
+
+}
+
+.table1 .row2 .row_label{
+    width: 150px;
+    height: 33px;
+    padding-left: 10px;
+
+    font-family: Century Gothic;
+    font-size: 16px;
+    color: #373737;
+
+    background: #cfe3f5;
+    border-top: 3px solid #369dfc;
+    border-right: 15px solid #369dfc;
+}
+
+.table1 .row1 .input_data select{
+    width: 200px;
+    height: 33px;
+
+    padding-left: 10px;
+
+    font-family: Century Gothic;
+    font-size: 15px;
+    color: #696969;
+
+    background: #ffffff;
+    border-style: none;
+    border-top: 3px solid #369dfc;
+
+}
+
+.table1 .row2 .input_data select {
+    width: 200px;
+    height: 33px;
+    padding-left: 10px;
+
+    font-family: Century Gothic;
+    font-size: 15px;
+    color: #696969;
+
+    background: #ffffff;
+    border-style: none;
+    border-top: 3px solid #369dfc;
+
+}
+
+.table1 .row1 .input_data .input{
+    width: 200px;
+    height: 33px;
+    padding-left: 10px;
+
+    font-family: Century Gothic;
+    font-size: 15px;
+    color: #696969;
+
+    background: #ffffff;
+    border-style: none;
+    border-top: 3px solid #369dfc;
+
+}
+.table1 .row2 .input_data .input{
+    width: 200px;
+    height: 33px;
+    padding-left: 10px;
+
+    font-family: Century Gothic;
+    font-size: 15px;
+    color: #696969;
+
+    background: #ffffff;
+    border-style: none;
+    border-top: 3px solid #369dfc;
+
+}
+.table1 .row1 .input_data .inputArea{
+     width: 200px;
+     height: 90px;
+     padding-left: 10px;
+
+     font-family: Century Gothic;
+     font-size: 15px;
+     color: #696969;
+
+     background: #ffffff;
+     border-style: none;
+     border-top: 3px solid #369dfc;
+
+ }
+
+.table1 .row2 .input_data .inputArea{
+    width: 200px;
+    height: 90px;
+    padding-left: 10px;
+
+    font-family: Century Gothic;
+    font-size: 15px;
+    color: #696969;
+
+    background: #ffffff;
+    border-style: none;
+    border-top: 3px solid #369dfc;
+
+}
+
+.table1 .row2 .input_data .inputSmall{
+    width: 60px;
+    height: 33px;
+    padding-left: 6px;
+
+    font-family: Century Gothic;
+    font-size: 15px;
+    color: #696969;
+
+    background: #ffffff;
+    border-style: none;
+    border-top: 3px solid #369dfc;
+    border-right: 3px solid #369dfc;
+
+}
+
+
+.button1{
+    width: 100px;
+    height: 35px;
+    /*position: relative;*/
+    display: block;
+    float: left;
+
+    font-family: Century Gothic;
+    font-size: 15px;
+    color: #FFFFFF;
+
+    background: #016acb;
+    border: 0px;
+}
+
