@@ -32,7 +32,7 @@
         </tr>
         <tr class="row1">
             <td class="row_label">Content and Details</td>
-            <td class="input_data"><textarea name="c_details" id="c_details" rows="15" cols="30"></textarea> </td> <!-- words(500) if this rows, cols can be change -->
+            <td class="input_data"><textarea class="inputArea" name="c_details" id="c_details" rows="15" cols="30"></textarea> </td> <!-- words(500) if this rows, cols can be change -->
             <!--            <td><input type="text_area" name="c_details" id="c_details" style="height: 100px"></td>-->
         </tr>
         <tr>
