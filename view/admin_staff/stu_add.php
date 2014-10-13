@@ -12,13 +12,21 @@ if(isset($_POST['add1'])){
     $level = $_POST['level'];
     $batch = $_POST['batch'];
 
-    $id = $course."/".$level."/".$year."/".$batch."/";
+    if($level==null){
+        echo "Enter Details";
+
+    }
+    else{
+        $id = $course."/".$level."/".$year."/".$batch."/";
 //    session_start();
-    $_SESSION['course'] = $course;
-    $_SESSION['id'] = $id;
+        $_SESSION['course'] = $course;
+        $_SESSION['id'] = $id;
 
 
 
-    include("../../view/admin_staff/student_reg.php");
+        include("../../view/admin_staff/student_reg.php");
+    }
+
+
 }
 

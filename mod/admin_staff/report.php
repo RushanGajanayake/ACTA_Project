@@ -270,7 +270,7 @@ class ReportMaker{
         $rslt2 = $past_data;
         $mrk = array("A+","A","A-","B+","B","B-","C+","C","C-","D+","D","D-","E");
 
-        GraphMaker1::lineChart($rslt1,$rslt2,$mrk);
+        GraphMaker1::compBarChart($rslt1,$rslt2,$mrk);
 
         return true;
 

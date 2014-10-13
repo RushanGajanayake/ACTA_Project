@@ -5,6 +5,26 @@
  * Date: 9/22/14
  * Time: 11:33 PM
  */
+
+    require_once("../conn/db_conn.php");
+    //include ("../view/header.php");
+
+
+
+
+    $u_nic = $_SESSION['p_nic'];
+
+    $db = DB_conn::conn();
+
+    $query = $db->prepare('SELECT * FROM person WHERE NIC = :u_nic');
+    $query->bindValue(':u_nic',$u_nic,PDO::PARAM_STR);
+    $query->execute();
+
+    $data = $query->fetchObject();
+    $f_nam = $data->FirstName;
+    $l_nam = $data->LastName;
+
+
 ?>
 
 
@@ -12,6 +32,7 @@
 <head>
     <title> Parent-Home Page</title>
     <link rel="stylesheet"  href="/ACTA_project/res/css/admin.css">
+    <link rel="stylesheet"  href="/ACTA_project/res/css/content.css">
     <style>
         *{padding: 0%; margin: 0%}
     </style>
@@ -20,7 +41,7 @@
 <body class="page">
 
 <div class="topbar">
-    <h3>Dayarathna Gajanayake</h3>
+    <h3><?php echo $f_nam." ".$l_nam; ?></h3>
 
 
 </div>
@@ -35,7 +56,7 @@
                 <ul>
                     <li class="selected"> <a href="#"> NAVIGATION </a> </li>
                     <li> <a href="#" onclick="myFunction1('/ACTA_project/view/parent/par_home.php')"> Home </a> </li>
-                    <li> <a href="#"> Personal Details </a> </li>
+                    <li> <a href="#" onclick="myFunction1('/ACTA_project/view/parent/parent_details.php')"> Personal Details </a> </li>
                     <li> <a href="#"> Reports </a> </li>
                     <li> <a href="#"> Payments </a> </li>
 
@@ -50,8 +71,8 @@
                 <ul class="ul1">
                     <li> <a href="#"> <img src="/ACTA_project/res/image/home.png" style="width: 23px ; height: 23px"></a></li>
                     <li> <a href="#" onclick="myFunction1('/ACTA_project/view/parent/par_home.php')"> Home </a> </li>
-                    <li> <a href="#"> Personal Details </a> </li>
-                    <li> <a href="#"> Reports </a> </li>
+                    <li> <a href="#" onclick="myFunction1('/ACTA_project/view/parent/parent_details.php')"> Personal Details </a> </li>
+                    <li> <a href="#" onclick="myFunction1('/ACTA_project/view/parent/gt_report.html')"> Reports </a> </li>
                     <li> <a href="#"> Payments </a> </li>
                     <!--                    <li> <button type="button" onclick="loadXMLDoc()"> Manage Details </button> </li>-->
 
@@ -131,6 +152,9 @@
             $("#panel").html(h);
         });
     }
+
+
+
 </script>
 
 

@@ -2,18 +2,18 @@
 /**
  * Created by PhpStorm.
  * User: Rushan Gajanayake
- * Date: 10/8/14
- * Time: 11:31 PM
+ * Date: 10/16/14
+ * Time: 11:38 AM
  */
  -->
 <div class="panel_upper">
-    <p>Report  >  Progress Report </p>
+    <p>Report  >  Batch Results </p>
 </div>
 <div class="panel" id="panel">
     <div class="panel_bar" >
-        <p>Batch Progress Report </p>
+        <p>Batch Results </p>
     </div>
-        <form action='/ACTA_project/mod/admin_staff/report.php' method="post" id="report">
+        <form action='/ACTA_project/mod/admin_staff/reslt_report.php' method="post" id="report">
             <table class="table1">
                 <tr class="row1">
                     <td class="row_label">Select Year</td>
@@ -67,23 +67,6 @@
                 <tr>
                     <td></td>
                     <td><input class="button1" type="submit" value="Generate" name="generateReport"></td>
-                    <td></td>
-                </tr>
-            </table>
-        </form>
-
-    <div class="panel_bar" >
-        <p>Individual Progress Report </p>
-    </div>
-        <form action='/ACTA_project/mod/admin_staff/report.php' method="post" id="report_stu">
-            <table class="table1">
-                <tr class="row1">
-                    <td class="row_label">Student ID</td>
-                    <td class="input_data"><input class="input data" type="text" name="stu_Id" id="stu_Id" ></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input class="button1" type="submit" value="Generate" name="generate_stu_Report"></td>
                     <td></td>
                 </tr>
             </table>

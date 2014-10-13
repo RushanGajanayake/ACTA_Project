@@ -119,6 +119,45 @@ class GraphMaker1{
 
     }
 
+    public static function compBarChart($data1,$data2,$legends){
+
+        $graph = new Graph(600,400);
+        $graph->SetScale("textlin");
+
+        $graph->SetShadow();
+        $graph->img->SetMargin(40,30,20,40);
+
+
+        $b1plot = new BarPlot($data1);
+        $b1plot->SetFillColor("orange");
+        $b2plot = new BarPlot($data2);
+        $b2plot->SetFillColor("blue");
+
+
+        $gbplot = new GroupBarPlot(array($b1plot,$b2plot));
+
+
+        $graph->Add($gbplot);
+
+        $graph->title->Set("Compare with previous year");
+//        $graph->xaxis->title->Set("X-title");
+//        $graph->yaxis->title->Set("Y-title");
+
+        $graph->title->SetFont(FF_FONT1,FS_BOLD);
+        $graph->yaxis->title->SetFont(FF_FONT1,FS_BOLD);
+        $graph->xaxis->title->SetFont(FF_FONT1,FS_BOLD);
+        $graph->xaxis->SetTickLabels($legends);
+
+        $b1plot->SetLegend("This Year");
+        $b2plot->SetLegend("Last Year");
+        $graph->legend->SetLayout(LEGEND_HOR);
+        $graph->legend->Pos(0.4,0.95,"center","bottom");
+
+
+        return $graph->Stroke('../graph/compareLineChart.png');
+
+    }
+
 }
 
 ?>

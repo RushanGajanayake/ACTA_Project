@@ -2,35 +2,44 @@
 /**
  * Created by PhpStorm.
  * User: Rushan Gajanayake
- * Date: 9/12/14
- * Time: 10:52 AM
+ * Date: 10/27/14
+ * Time: 10:50 AM
  */
+
 require_once("../../ctrl/queries.php");
 require_once("../../conn/db_conn.php");
-require_once("../../mod/admin_staff/marks_enter.php");
+require_once("../../mod/admin_staff/attendance_eneter.php");
 
-class marks{
+class Atten{
 
     private $db_connection= null;
 
     public function __construct(){
 
-        if(isset($_POST['next'])){
+        if(isset($_POST['add1'])){
             //get details from marks_add.php form
             $year= $_POST['year'];
             $course=$_POST['course'];
             $level=$_POST['level'];
             $batch=$_POST['batch'];
-            $subject= $_POST['subject'];
 
-            $this->getStudents($year,$course,$level,$batch,$subject);
+            $month = $_POST['month'];
+            $yr = $_POST['year1'];
+            $dates = $_POST['dates'];
+
+//            this is the type of attendace table month field.
+//            $month = $yr."-".$month ;
+
+
+
+            $this->getStudents($year,$course,$level,$batch,$yr,$month,$dates);
 
         }
 
     }
 
     private function databseConnection(){
-           //check the database connection
+        //check the database connection
         if($this->db_connection != null){
             return true;
         }
@@ -39,7 +48,7 @@ class marks{
         }
     }
 
-    private function getStudents($year,$course,$level,$batch,$subject){
+    private function getStudents($year,$course,$level,$batch,$yr,$month,$no_of_dates){
         //create id for students
         $id = $course."/".$level."/".$year."/".$batch."/%" ;
 
@@ -65,14 +74,14 @@ class marks{
             //interface for enter marks
             echo
             "<div class='panel_upper'>
-            <p>Manage Details  >  Marks </p>
+            <p>Manage Details  >  Attendance Add </p>
             </div>
             <div class='panel' id='panel'>
-            <form action='/ACTA_project/mod/admin_staff/marks_enter.php' method='post' id='mrks_enter'>
+            <form action='/ACTA_project/mod/admin_staff/attendance_eneter.php' method='post' id='atten_enter'>
             <table class='table1'>
             <tr class='row2'>
                 <th class='row_label'> Student ID</th>
-                <th class='row_label'> Result</th>
+                <th class='row_label'> No.of Dates</th>
              </tr>
             ";
 
@@ -83,18 +92,20 @@ class marks{
                 $st_id = $stu_id_list[$x];
                 echo "<tr class='".$r."'>";
                 echo "<td class='row_label'>".$st_id."</td>";
-                echo "<td class='input_data'><input type='hidden' name='s_id".$x."' id='s_id".$x."' value='$st_id'><input class='input data' type='text' name='mark".$x."' id='mark".$x."'>
+                echo "<td class='input_data'><input type='hidden' name='s_id".$x."' id='s_id".$x."' value='$st_id'><input class='input data' type='text' name='atten".$x."' id='atten".$x."'>
                      </td>";
                 echo "</tr>";
             }
-            $qry= "ajaxPost('/ACTA_project/mod/admin_staff/marks_enter.php',$('#mrks_enter').serialize()+'&Add2=Submit')";
+            $qry= "ajaxPost('/ACTA_project/mod/admin_staff/attendance_eneter.php',$('#atten_enter').serialize()+'&Add2=Submit')";
             echo "<tr><td><input type='hidden' name='s_num' id='s_num' value='$no_of_st'>
-                          <input type='hidden' name='sub_num' id='sub_num' value='$subject'></td>
+                          <input type='hidden' name='year1' id='year1' value='$yr'>
+                          <input type='hidden' name='month' id='month' value='$month'>
+                          <input type='hidden' name='dates' id='dates' value='$no_of_dates'></td>
                     <td><input class='button1' type='button' name='Add2' value='Submit' onclick=".$qry."></td>
                     </tr>";
 
             echo "</table></form>";
-            $ajx = "myFunction1('/ACTA_project/view/admin_staff/marks_add.php')";
+            $ajx = "myFunction1('/ACTA_project/view/admin_staff/attendance_add.php')";
             echo "<button class='button1' onclick=".$ajx.">Back </button> </div>";
 
             //$mkEnter = new marksEnter($stu_id_list);
@@ -110,7 +121,6 @@ class marks{
 }
 
 
-//create a marks class
-$mrks = new marks();
+$at = new Atten();
 
 ?>

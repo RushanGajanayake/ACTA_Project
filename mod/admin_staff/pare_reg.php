@@ -46,6 +46,7 @@ class Parent_reg{
 
         if($query_add->insert($table,$values,$row=null)==true){
             echo "data insert ";
+            include("../../view/admin_staff/student_reg.php");
         }
         else{
             echo "not insert";
@@ -54,4 +55,8 @@ class Parent_reg{
 
     }
 
+
 }
+$parent = new Parent_reg();
+
+?>

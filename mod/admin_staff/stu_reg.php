@@ -26,9 +26,9 @@ class Stu_reg{
             $firstName = $_POST['firstName'];
             $surname = $_POST['surname'];
             //date of birth
-            $dob_date = $_POST['dob_date'];
-            $dob_month = $_POST['dob_month'];
-            $dob_year = $_POST['dob_year'];
+//            $dob_date = $_POST['dob_date'];
+//            $dob_month = $_POST['dob_month'];
+//            $dob_year = $_POST['dob_year'];
 
             $addr = $_POST['addr'];
             $city = $_POST['city'];
@@ -41,9 +41,14 @@ class Stu_reg{
             $cmp_name = $_POST['cmp_name'];
             $cmp_add = $_POST['cmp_add'];
             $cmp_No = $_POST['cmp_No'];
+
+            $addParent = $_POST['yesNo'];
+
             //$img = $_FILES['pic'];
 
-            $dob = $dob_year."-".$dob_month."-".$dob_date;
+//            $dob = $dob_year."-".$dob_month."-".$dob_date;
+            $dob = $this->nicBOD($nic);
+
 
             //$img_path = $this->profImage($img);
 
@@ -60,6 +65,28 @@ class Stu_reg{
 
             $this->add("person",$values1);
             $this->add("student",$values2);
+
+            if($addParent== 'yesCheck'){
+
+                $nic_P = $_POST['nicP'];
+                $title_P = $_POST['titleP'];
+                $firstName_P = $_POST['firstNameP'];
+                $surname_P = $_POST['surnameP'];
+                $addr_P = $_POST['addrP'];
+                $city_P = $_POST['cityP'];
+                $p_code_P = $_POST['p_codeP'];
+                $email_P = $_POST['emailP'];
+                $tele_No_P = $_POST['tele_NoP'];
+                $mob_No_P = $_POST['mob_NoP'];
+
+                $values3 =array($nic_P,$title_P,$firstName_P,$surname_P,$addr_P,$city_P,$p_code_P,$email_P,$tele_No_P,$mob_No_P);
+
+                $values4 = array($stu_ID,$nic_P);
+
+
+                $this->add("person",$values3);
+                $this->add("parent",$values4);
+            }
 
             include("../../view/admin_staff/student_reg.php");
         }
@@ -87,6 +114,11 @@ class Stu_reg{
         $img1= $img['tmp_name'];
         $imgfp= fopen($img1,'rb');
         return $imgfp;
+    }
+
+    private function nicBOD($nic){
+        return "2014-08-15";
+
     }
 }
 

@@ -13,7 +13,12 @@ $id = null;
 if(isset($_POST['update'])){
     global $id;
 
-    $id= $_POST['stu_Id'];
+    $full_id= $_POST['search'];
+
+    $piece = explode(" ",$full_id);
+    $id= $piece[0];
+
+
 }
     $db = DB_conn::conn();
 
@@ -67,87 +72,96 @@ if(isset($_POST['update'])){
 
 <body>
 
-<form action='/ACTA_project/mod/admin_staff/stu_update.php' method='post' enctype='multipart/form-data' id='stu_updated'>
-    <table class='table1'>
-        <tr>
-            <td>Student ID</td>
-            <td><input type='text' name='stu_ID' id='stu_ID' value='<?php echo $st_id;?>'></td>
-        </tr>
-        <tr>
-            <td>NIC No </td>
-            <td><input type='text' name='nic' id='nic' value='<?php echo $nic;?>'></td>
-        </tr>
-        <tr>
-            <td>Title</td>
-            <td><select name='title' id='title' ><option value=''><?php echo $title;?></option><option value='Mr'>Mr</option><option value='Mrs'>Mrs</option><option value='Ms'>Ms</option>
-                </select>
-            </td>
+<div class="panel_upper">
+    <p>Manage Details  >  Student  >  Update & Delete Details </p>
+</div>
 
-        </tr>
-        <tr>
-            <td>First Name</td>
-            <td><input type='text' name='firstName' id='firstName' value='<?php echo $fname;?>'></td>
-        </tr>
-        <tr>
-            <td>Surname</td>
-            <td><input type='text' name='surname' id='surname' value='<?php echo $lname;?>'></td>
-        </tr>
-        <tr>
-            <td>Date of Birth</td>
-            <td><input type='text' name='dob' id='dob' value='<?php echo $dob;?>' ></td>
-        </tr>
-        <tr>
-            <td>Address</td>
-            <td><textarea name='addr' id='addr' rows='4' cols='20' ><?php echo $street;?></textarea></td>
-        </tr>
-        <tr>
-            <td>City</td>
-            <td><input type='text' name='city' id='city' value='<?php echo $city;?>'></td>
-        </tr>
-        <tr>
-            <td>Postal Code</td>
-            <td><input type='text' name='p_code' id='p_code' value='<?php echo $p_code;?>'></td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td><input type='text' name='email' id='email' value='<?php echo $email;?>'></td>
-        </tr>
-        <tr>
-            <td>Telephone No</td>
-            <td><input type='text' name='tele_No' id='tele_No' value='<?php echo $p_no;?>'></td>
-        </tr>
-        <tr>
-            <td>Mobile No</td>
-            <td><input type='text' name='mob_No' id='mob_No' value='<?php echo $m_no;?>'></td>
-        </tr>
-        <tr>
-            <td>Company Name</td>
-            <td><input type='text' name='cmp_name' id='cmp_name' value='<?php echo $comp;?>'></td>
-        </tr>
-        <tr>
-            <td>Company Address</td>
-            <td><input type='text' name='cmp_add' id='cmp_add' value='<?php echo $comp_add;?>'></td>
-        </tr>
-        <tr>
-            <td>Company Phone No</td>
-            <td><input type='text' name='cmp_No' id='cmp_No' value='<?php echo $comp_pho;?>'></td>
-        </tr>
-        <tr>
-            <td>Registered Date</td>
-            <td><input type='date' name='reg_date' id='reg_date' value='<?php echo $reg_date;?>'></td>
-        </tr>
-        <tr>
-            <td>Course ID</td>
-            <td><input type='text' name='c_ID' id='c_ID' value='<?php echo $c_id;?>'></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="Update" name="updated" onclick="ajaxPost('/ACTA_project/mod/admin_staff/stu_update.php',$('#stu_updated').serialize()+'&updated=Update')"></td>
-            <td><input type="button" value="Delete" name="deleted" onclick="ajaxPost('/ACTA_project/mod/admin_staff/stu_update.php',$('#stu_updated').serialize()+'&deleted=Delete')"></td>
-        </tr>
+<div class="panel" id="panel">
+    <div class="panel_bar" >
+        <p>Add New Student </p>
+    </div>
 
-    </table>
-</form>
+    <form action='/ACTA_project/mod/admin_staff/stu_update.php' method='post' enctype='multipart/form-data' id='stu_updated'>
+        <table class='table1'>
+            <tr class="row1">
+                <td class="row_label">Student ID</td>
+                <td class="input_data"><input class="input data"  type='text' name='stu_ID' id='stu_ID' value='<?php echo $st_id;?>'></td>
+            </tr>
+            <tr class="row2">
+                <td class="row_label">NIC No </td>
+                <td class="input_data"><input class="input data"  type='text' name='nic' id='nic' value='<?php echo $nic;?>'></td>
+            </tr>
+            <tr class="row1">
+                <td class="row_label">Title</td>
+                <td class="input_data"><select name='title' id='title' ><option value=''><?php echo $title;?></option><option value='Mr'>Mr</option><option value='Mrs'>Mrs</option><option value='Ms'>Ms</option>
+                    </select>
+                </td>
 
-<button class="back" onclick="myFunction('/ACTA_project/view/admin_staff/stu_check.php')">Back </button>
+            </tr>
+            <tr class="row2">
+                <td class="row_label">First Name</td>
+                <td class="input_data"><input class="input data"  type='text' name='firstName' id='firstName' value='<?php echo $fname;?>'></td>
+            </tr>
+            <tr class="row1">
+                <td class="row_label">Surname</td>
+                <td class="input_data"><input class="input data"  type='text' name='surname' id='surname' value='<?php echo $lname;?>'></td>
+            </tr>
+    <!--        <tr>-->
+    <!--            <td>Date of Birth</td>-->
+    <!--            <td><input type='text' name='dob' id='dob' value='--><?php //echo $dob;?><!--' ></td>-->
+    <!--        </tr>-->
+            <tr class="row2">
+                <td class="row_label">Address</td>
+                <td class="input_data"><textarea class="inputArea" name='addr' id='addr' rows='4' cols='20' ><?php echo $street;?></textarea></td>
+            </tr>
+            <tr class="row1">
+                <td class="row_label">City</td>
+                <td class="input_data"><input class="input data"  type='text' name='city' id='city' value='<?php echo $city;?>'></td>
+            </tr>
+            <tr class="row2">
+                <td class="row_label">Postal Code</td>
+                <td class="input_data"><input class="input data"  type='text' name='p_code' id='p_code' value='<?php echo $p_code;?>'></td>
+            </tr>
+            <tr class="row1">
+                <td class="row_label">Email</td>
+                <td class="input_data"><input class="input data"  type='text' name='email' id='email' value='<?php echo $email;?>'></td>
+            </tr>
+            <tr class="row2">
+                <td class="row_label">Telephone No</td>
+                <td class="input_data"><input class="input data"  type='text' name='tele_No' id='tele_No' value='<?php echo $p_no;?>'></td>
+            </tr>
+            <tr class="row1">
+                <td class="row_label">Mobile No</td>
+                <td class="input_data"><input class="input data"  type='text' name='mob_No' id='mob_No' value='<?php echo $m_no;?>'></td>
+            </tr>
+            <tr class="row2">
+                <td class="row_label">Company Name</td>
+                <td class="input_data"><input class="input data"  type='text' name='cmp_name' id='cmp_name' value='<?php echo $comp;?>'></td>
+            </tr>
+            <tr class="row1">
+                <td class="row_label">Company Address</td>
+                <td class="input_data"><input class="input data"  type='text' name='cmp_add' id='cmp_add' value='<?php echo $comp_add;?>'></td>
+            </tr>
+            <tr class="row2">
+                <td class="row_label">Company Phone No</td>
+                <td class="input_data"><input class="input data"  type='text' name='cmp_No' id='cmp_No' value='<?php echo $comp_pho;?>'></td>
+            </tr>
+            <tr class="row1">
+                <td class="row_label">Registered Date</td>
+                <td class="input_data"><input class="input data"  type='date' name='reg_date' id='reg_date' value='<?php echo $reg_date;?>'></td>
+            </tr>
+            <tr class="row2">
+                <td class="row_label">Course ID</td>
+                <td class="input_data"><input class="input data"  type='text' name='c_ID' id='c_ID' value='<?php echo $c_id;?>'></td>
+            </tr>
+            <tr>
+                <td><input class="button1" type="button" value="Update" name="updated" onclick="ajaxPost('/ACTA_project/mod/admin_staff/stu_update.php',$('#stu_updated').serialize()+'&updated=Update')"></td>
+                <td><input class="button1" type="button" value="Delete" name="deleted" onclick="ajaxPost('/ACTA_project/mod/admin_staff/stu_update.php',$('#stu_updated').serialize()+'&deleted=Delete')"></td>
+            </tr>
 
+        </table>
+    </form>
+
+    <button class="button1" onclick="myFunction('/ACTA_project/view/admin_staff/stu_check.php')">Back </button>
+</div>
 </body>

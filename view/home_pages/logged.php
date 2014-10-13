@@ -5,23 +5,23 @@
  * Date: 8/23/14
  * Time: 3:42 PM
  */
-//require_once("../conn/db_conn.php");
-////include ("../view/header.php");
-//
-//
-//
-//
-//        $u_nic = $_SESSION['p_nic'];
-//
-//        $db = DB_conn::conn();
-//
-//        $query = $db->prepare('SELECT * FROM person WHERE NIC = :u_nic');
-//        $query->bindValue(':u_nic',$u_nic,PDO::PARAM_STR);
-//        $query->execute();
-//
-//        $data = $query->fetchObject();
-//        $f_nam = $data->FirstName;
-//        $l_nam = $data->LastName;
+require_once("../conn/db_conn.php");
+//include ("../view/header.php");
+
+
+
+
+        $u_nic = $_SESSION['p_nic'];
+
+        $db = DB_conn::conn();
+
+        $query = $db->prepare('SELECT * FROM person WHERE NIC = :u_nic');
+        $query->bindValue(':u_nic',$u_nic,PDO::PARAM_STR);
+        $query->execute();
+
+        $data = $query->fetchObject();
+        $f_nam = $data->FirstName;
+        $l_nam = $data->LastName;
 
 
 ?>
@@ -40,7 +40,8 @@
 <body class="page">
 
 <div class="topbar">
-    <h3>Rushan Gajanayake</h3>
+<!--    <img src="/ACTA_project/res/image/wrapper.png" style="width: 1500px ; height: 250px">-->
+    <h3><?php echo $f_nam." ".$l_nam; ?></h3>
 
 
 </div>
@@ -56,7 +57,7 @@
                     <li class="selected"> <a href="#"> NAVIGATION </a> </li>
                     <li> <a href="#" onclick="myFunction1('/ACTA_project/view/admin_staff/home.php')"> Home </a> </li>
                     <li> <a href="#" onclick="myFunction1('/ACTA_project/view/admin_staff/personal_details.php')"> Personal Details </a> </li>
-                    <li> <a href="#" onclick="myFunction1('/ACTA_project/view/admin_staff/course.html')"> Course </a> </li>
+                    <li> <a href="#" onclick="myFunction1('/ACTA_project/view/admin_staff/courses.php')"> Course </a> </li>
                     <li> <a href="#" onclick="myFunction1('/ACTA_project/view/admin_staff/manage_details.html')"> Manage Details </a> </li>
                     <li> <a href="#"> Notification </a> </li>
 
@@ -71,7 +72,7 @@
                 <ul class="ul1">
                     <li> <a href="#"> <img src="/ACTA_project/res/image/home.png" style="width: 23px ; height: 23px"></a></li>
                     <li> <a href="#" onclick="myFunction1('/ACTA_project/view/admin_staff/home.php')"> Home </a> </li>
-                    <li> <a href="#" onclick="myFunction1('/ACTA_project/view/admin_staff/course.html')"> Courses </a> </li>
+                    <li> <a href="#" onclick="myFunction1('/ACTA_project/view/admin_staff/courses.php')"> Courses </a> </li>
                     <li> <a href="#" onclick="myFunction1('/ACTA_project/view/admin_staff/report.html')"> Reports </a> </li>
                     <li> <a href="#" onclick="myFunction1('/ACTA_project/view/admin_staff/manage_details.html')"> Manage Details </a> </li>
 <!--                    <li> <button type="button" onclick="loadXMLDoc()"> Manage Details </button> </li>-->
@@ -111,7 +112,64 @@
 
 <script src="/ACTA_project/jQuery/jquery-1.11.1.min.js"></script>
 
-<script>
+<script language="JavaScript" type="text/javascript">
+
+
+    function autoComplete(){
+        $("#searchid").keyup(function(){
+            var searchid = $(this).val();
+            if(searchid!=''){
+                $.ajax({
+                    type: "POST",
+                    url: "../mod/admin_staff/getNames.php",
+                    data: {search: searchid},
+                    cache: false,
+                    success: function(html)
+                    {
+                        $("#result1").html(html).show();
+                    }
+                });
+            }return false;
+
+        });
+
+//        jQuery("#result").live("click",function(e){
+//            var $clicked = $(e.target);
+//            var $name = $clicked.find('.c_ID').html();
+//            var decoded = $("<div/>").html($name).text();
+//            $('#searchid').val(decoded);
+//        });
+//        jQuery(document).live("click", function(e) {
+//            var $clicked = $(e.target);
+//            if (! $clicked.hasClass("search")){
+//                jQuery("#result").fadeOut();
+//            }
+//        });
+//        $('#searchid').click(function(){
+//            jQuery("#result").fadeIn();
+//        });
+    }
+
+    function autoCompl_get(){
+//        alert("xxx");
+        $(".show").click(function(e){
+
+            $(this).slideUp();
+            var value = $(this).val();
+            $('#searchid').val(value);
+//            alert(value);
+
+//            var $clicked = $(e.target);
+//            var $name = $clicked.find('.name11').html();
+//            alert($name);
+//            var decoded = $("<div/>").html($name).text();
+//            $('#searchid').val(decoded);
+        });
+    }
+
+
+
+
     var xmlhttp;
     function loadXMLDoc(url,cfunc)
     {
@@ -137,6 +195,7 @@
             }
         });
     }
+
     function myFunction(s)
     {
         loadXMLDoc(s,function()
@@ -149,10 +208,45 @@
     }
     function ajaxPost(url,data){
         $.post(url,data,function(h){
-            $("#panel").html(h);
+            $("#main_panel").html(h);
         });
     }
 
+    function ajaxPost1(url,data){
+
+        var d = $(data).val();
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: {search: d},
+            cache: false,
+            success: function(html)
+            {
+                $("#main_panel").html(html).show();
+            }
+        });
+
+    }
+
+
+    function myfun(select){
+        var selectedOption = select.options[select.selectedIndex];
+        var data = selectedOption.value;
+//        document.getElementById("levels").innerHTML = "You selected: " + data;
+
+
+        $.ajax({
+            type: "POST",
+            url: "../view/admin_staff/getData.php",
+            data: {search: data},
+            cache: false,
+            success: function(html)
+            {
+                $("#levels").html(html).show();
+            }
+        });
+    }
 
 
 </script>

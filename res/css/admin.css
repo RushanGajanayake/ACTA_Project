@@ -213,7 +213,6 @@
     background: #00519d;
 }
 
-/*dont change this*/
 .main_panel .panel_upper p{
     padding: 7px 35px;
 
@@ -221,6 +220,25 @@
     font-size: 25px;
     color: #FFFFFF;
 }
+
+.main_panel .panel_upper .p0{
+    padding: 7px 35px;
+}
+.main_panel .panel_upper .p1{
+    /*padding: 2px ;*/
+
+    font-family: Century Gothic;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.main_panel .panel_upper .p2{
+    padding: 0px 10px ;
+
+    font-family: Century Gothic;
+    font-size: 22px;
+    color: #dde6eb;
+}
+
 
 /*dont change this*/
 .main_panel .panel{
@@ -230,6 +248,7 @@
     position: relative;
     float: right;
     margin-top: 20px;
+    overflow: scroll;
 
     background: #369dfc;
 }

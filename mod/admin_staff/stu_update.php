@@ -20,7 +20,7 @@ class StuUpdate{
             $title = $_POST['title'];
             $firstName = $_POST['firstName'];
             $surname = $_POST['surname'];
-            $dob = $_POST['dob'];
+//            $dob = $_POST['dob'];
 
             $addr = $_POST['addr'];
             $city = $_POST['city'];
@@ -33,6 +33,8 @@ class StuUpdate{
             $cmp_name = $_POST['cmp_name'];
             $cmp_add = $_POST['cmp_add'];
             $cmp_No = $_POST['cmp_No'];
+
+            $dob = "2014-08-15";
 
             $values1 =array('Title'=>$title,'FirstName'=>$firstName,'LastName'=>$surname,'Street'=>$addr,'City'=>$city,'PostalCode'=>$p_code,'Email'=>$email,'PhoneNo'=>$tele_No,'MobileNo'=>$mob_No);
             $where1 = array('NIC'=>$nic);

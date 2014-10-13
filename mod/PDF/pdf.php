@@ -15,6 +15,24 @@ class PDF extends FPDF{
         parent::FPDF();
 
     }
+    public static function createResutls($data,$sub){
+        $pdf = new PDF();
+        $pdf->SetLeftMargin(25);
+        $pdf->AddPage();
+
+        $pdf->SetFont('Arial','B',16);
+        $pdf->Cell(0,15,$sub.' Report',0,0,"C");
+        $pdf->Ln(25);
+
+        $pdf->makeTable2($data);
+        $pdf->Ln(10);
+
+        $pdf->Output("Results Report.pdf","I");
+
+
+
+    }
+
     public static function createPDF_student($reportDetails,$AnalysisData){
         $pdf = new PDF();
         $pdf->SetLeftMargin(25);
@@ -34,9 +52,10 @@ class PDF extends FPDF{
         $pdf->Cell(0,5,'Assignment Progress',0,0,"L");
         $pdf->Ln(10);
         $pdf->SetFont('Arial','',10);
-        $pdf->Write(5,"Students all assignment marks evaluating for this subject is shown blow..!! This is help to evaluate progress of whole batch..!!!!!! LOL :P :D");
+        $pdf->Write(5,"Students all assignment marks evaluating for this subject is shown blow..!! This is help to evaluate progress of whole batch..!!!!!!");
 
         $pdf->Output("Report.pdf","I");
+
 
     }
 
@@ -63,7 +82,7 @@ class PDF extends FPDF{
         $pdf->Cell(0,5,'Assignment Progress',0,0,"L");
         $pdf->Ln(10);
         $pdf->SetFont('Arial','',9);
-        $pdf->Write(5,"Students all assignment marks evaluating for this subject is shown blow..!! This is help to evaluate progress of whole batch..!!!!!! LOL :P :D");
+        $pdf->Write(5,"Students all assignment marks evaluating for this subject is shown blow..!! This is help to evaluate progress of whole batch..!!!!!! ");
 
         $pdf->AddPage();
         $pdf->SetFont('Arial','B',11);
@@ -84,7 +103,9 @@ class PDF extends FPDF{
 
         $this->SetFont('Arial','',8);
 
-        for($i=0;$i<13;$i++){
+        $y=count($data);
+
+        for($i=0;$i<$y;$i++){
             $this->Cell(30,5,$data[$i][0],1,0,"C");
             $this->Cell(20,5,$data[$i][1],1,0,"C");
             $this->Cell(40,5,$data[$i][2]."%",1,0,"C");
@@ -92,6 +113,19 @@ class PDF extends FPDF{
         }
 
     }
+
+    public function makeTable2($data){
+        $this->SetFont('Arial','',10);
+
+        $x= count($data);
+
+        for($i=0;$i<$x;$i++){
+            $this->Cell(60,6,$data[$i][0],1,0,"C");
+            $this->Cell(40,6,$data[$i][1],1,0,"C");
+            $this->Ln();
+        }
+    }
+
     public function reportData($details){
 
         $this->SetFont('Arial','',10);

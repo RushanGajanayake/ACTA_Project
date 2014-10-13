@@ -15,9 +15,6 @@ class Lec_reg{
 
     public function __construct(){
 
-
-
-
         if(isset($_POST['add'])){
 
             $ac_ID = $_POST['ac_ID'];
@@ -54,6 +51,7 @@ class Lec_reg{
 
         if($query_add->insert($table,$values,$row=null)==true){
             echo "data insert ";
+            include("../../view/admin_staff/lecture_reg.php");
         }
         else{
             echo "not insert";
@@ -62,6 +60,7 @@ class Lec_reg{
 
     }
 }
+$lec= new Lec_reg();
 
 ?>
 

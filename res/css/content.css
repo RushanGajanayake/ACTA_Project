@@ -1,4 +1,32 @@
 
+/*.panel .panel_bar{*/
+    /*width: 96%;*/
+    /*height: 5%;*/
+    /*position: relative;*/
+    /*margin: 20px 0 20px 0;*/
+    /*float: right;*/
+
+    /*background: #0066ba;*/
+/*}*/
+
+/*dont change this*/
+.panel .panel_bar p{
+    width: 90%;
+    height: 30px;
+    /*float: right;*/
+    padding: 5px 35px;
+    margin-top: 20px;
+    margin-left: 15px;
+    /*position: relative;*/
+
+    font-family: Century Gothic;
+    font-size: 20px;
+    color: #FFFFFF;
+
+    background: #0069af;
+
+
+}
 
 /* input data table */
 
@@ -6,10 +34,44 @@
     padding: 20px;
     margin-left: 30px;
     border-style: none;
+    table-layout: fixed;
+
 
     width: 45%;
 
 }
+.table1 .row1 .label1{
+    width: 350px;
+    height: 33px;
+    margin-top: 10px;
+    padding-left: 6px;
+
+    font-family: Century Gothic;
+    font-size: 16px;
+    color: #000000;
+
+    background: #f7fafa;
+    border-top: 3px solid #369dfc;
+    border-right: 15px solid #369dfc;
+
+}
+.table1 .row2 .label1{
+    width: 350px;
+    height: 33px;
+    margin-top: 10px;
+    padding-left: 6px;
+
+    font-family: Century Gothic;
+    font-size: 16px;
+    color: #000000;
+
+    background: #f7fafa;
+    border-top: 3px solid #369dfc;
+    border-right: 15px solid #369dfc;
+
+}
+
+
 .table1 .row1 .row_label{
     width: 150px;
     height: 33px;
@@ -85,6 +147,56 @@
     border-top: 3px solid #369dfc;
 
 }
+/*kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*/
+/* Update form css*/
+
+.table1 .row1 .input_data .search{
+    width: 400px;
+    height: 33px;
+    padding-left: 10px;
+
+    font-family: Century Gothic;
+    font-size: 15px;
+    color: #161616;
+
+    background: #ffffff;
+    border-style: none;
+    border-top: 3px solid #369dfc;
+
+}
+
+.table1 .row1 .input_data .show{
+    width: 400px;
+    height: 33px;
+    padding-left: 10px;
+
+    font-family: Century Gothic;
+    font-size: 15px;
+    color: #696969;
+
+    background: #e3e3e3;
+    border-style: none;
+    border-top: 3px solid #369dfc;
+
+}
+
+.table1 .row1 .row_label2{
+    width: 150px;
+    height: 33px;
+    /*margin-top: 10px;*/
+    padding-left: 10px;
+
+    font-family: Century Gothic;
+    font-size: 16px;
+    color: #373737;
+
+    background: #369dfc;
+    border-top: 3px solid #369dfc;
+    border-right: 15px solid #369dfc;
+
+}
+/*kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*/
+
 .table1 .row2 .input_data .input{
     width: 200px;
     height: 33px;
@@ -145,6 +257,18 @@
 
 }
 
+.table1 .blank_row{
+    height: 33px !important;
+}
+.table1 .row1 .radio_lble{
+    font-family: Century Gothic;
+    font-size: 15px;
+    color: #000000;
+
+}
+
+
+
 
 .button1{
     width: 100px;
@@ -175,4 +299,5 @@
     background: #060e86;
     border: 0px;
 }
+
 
