@@ -10,11 +10,15 @@ require_once("../../conn/db_conn.php");
 require_once("../../ctrl/queries.php");
 class marksEnter{
 
+    private $s_num ;
+    private $m_count = 0;
+
 
     public function __construct(){
 
          if(isset($_POST['Add2'])){
              $s_num = $_POST['s_num'];
+             $this->s_num = $s_num;
              //echo $s_num;
 
             for($y=0; $y<$s_num; $y++){
@@ -31,6 +35,8 @@ class marksEnter{
                 $this->addMarks($s_id,$sub_num,$results);
 
             }
+
+            echo $this->m_count." Students Marks Entered";
          }
 
     }
@@ -45,7 +51,8 @@ class marksEnter{
         $query = new mysqlQuery();
 
         if($query->insert("marks",$values,$row=null)==true){
-            echo "results entered";
+            $this->m_count++;
+            //echo "results entered";
         }
         else{
             echo "not entered";

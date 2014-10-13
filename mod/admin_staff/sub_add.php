@@ -17,11 +17,12 @@ class subjAdd{
 
             $s_ID = $_POST['s_ID'];
             $s_name = $_POST['s_name'];
+            $s_credits = $_POST['s_credit'];
             $s_details = $_POST['s_details'];
             $ac_id = $_POST['ac_id'];
             $c_id = $_POST['c_id'];
 
-            $values = array($s_ID,$s_name,$s_details,$c_id,$ac_id);
+            $values = array($s_ID,$s_name,$s_credits,$s_details,$c_id,$ac_id);
 
             $this->add("subject",$values);
 
