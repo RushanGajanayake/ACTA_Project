@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<!--<script>-->
+    <!--var xmlhttp;-->
+    <!--function loadXMLDoc(url,cfunc)-->
+    <!--{-->
+        <!--if (window.XMLHttpRequest)-->
+        <!--{// code for IE7+, Firefox, Chrome, Opera, Safari-->
+            <!--xmlhttp=new XMLHttpRequest();-->
+        <!--}-->
+        <!--else-->
+        <!--{// code for IE6, IE5-->
+            <!--xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");-->
+        <!--}-->
+        <!--xmlhttp.onreadystatechange=cfunc;-->
+        <!--xmlhttp.open("GET",url,true);-->
+        <!--xmlhttp.send();-->
+    <!--}-->
+    <!--function myFunction(s)-->
+    <!--{-->
+        <!--loadXMLDoc(s,function()-->
+        <!--{-->
+            <!--if (xmlhttp.readyState==4 && xmlhttp.status==200)-->
+            <!--{-->
+                <!--document.getElementById("myDiv").innerHTML=xmlhttp.responseText;-->
+            <!--}-->
+        <!--});-->
+    <!--}-->
+<!--</script>-->
+
+<script>
+    function loadXMLDoc(){
+        var xmlhttp;
+        if(window.XMLHttpRequest){
+            //code for IE7+ , safari, chrome, opera, firefox
+            xmlhttp = new XMLHttpRequest();
+        }
+        else{
+            //code for IE5, IE6
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState == 4 && xmlhttp.status== 200){
+                document.getElementById("main_panel").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET","tst2.html",true);
+        xmlhttp.send();
+    }
+</script>
+
+<body>
+
+<div class="right"> <!-- ************ -->
+    <div class="right_upper">
+        <div class="horizontal-bar">
+            <ul>
+
+                <li ><button type="button">  <a href="../../view/admin_staff/stu_check.php"> Home </a></button> </li>
+
+                <li> <a href="#"> Courses </a> </li>
+                <li> <a href="#"> Reports </a> </li>
+                <!--                    <li> <a onclick="loadXMLDoc()"> Manage Details </a> </li>-->
+                <li> <button type="button" onclick="loadXMLDoc()"> Manage Details </button> </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="right_main">
+        <div class="main_panel" id="main_panel">  <!-- this is the part which change using AJAX. -->
+
+        </div>
+    </div>
+</div>
+
+<div id="myDiv"><h2>Let AJAX change this text</h2></div>
+<!--<button type="button" onclick="loadXMLDoc()">Change Content</button>-->
+
+</body>
+</html>

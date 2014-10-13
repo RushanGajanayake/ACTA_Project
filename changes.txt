@@ -1,0 +1,15 @@
+2014/09/14-----
+
+# add feilds to marks table-
+	Sub_ID - varchar
+	m_ID - marks id auto increment
+	
+# delete Ac_field from subject table  
+
+2014/09/15-----
+
+# add fields to course table
+	detail
+
+# add field to subject table
+	discription    *** if one subject doing in two sperate coursers???

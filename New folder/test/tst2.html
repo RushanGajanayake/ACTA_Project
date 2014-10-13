@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet"  href="../../res/css/admin.css">
+<div class="panel_upper" id="panel_upper">
+    <p>Manage Details</p>
+</div>
+<div class="panel" id="panel">
+    <div class="icons">
+        <button type="button" onclick="loadXMLDoc()">  <img src="../../res/image/stu.png"></button>
+        <button type="button"> <img src="../../res/image/le.png"></button>
+        <button type="button"> <img src="../../res/image/co.png"></button>
+        <button type="button"> <img src="../../res/image/ma.png"></button>
+        <button type="button"> <img src="../../res/image/at.png"></button>
+        <button type="button"> <img src="../../res/image/ev.png"></button>
+        <button type="button"> <img src="../../res/image/no.png"></button>
+
+    </div>
+
+</div>
+
+<script>
+    function loadXMLDoc(){
+        var xmlhttp;
+        if(window.XMLHttpRequest){
+            //code for IE7+ , safari, chrome, opera, firefox
+            xmlhttp = new XMLHttpRequest();
+        }
+        else{
+            //code for IE5, IE6
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState == 4 && xmlhttp.status== 200){
+                document.getElementById("panel_upper").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET","w.php",true);
+        xmlhttp.send();
+    }
+</script>
+</html>
