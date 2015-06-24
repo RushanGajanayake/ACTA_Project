@@ -14,7 +14,7 @@ include("../view/header.php"); ?>
 
 <title>ACTA</title>
 <link rel="stylesheet" href="/ACTA_project/res/css/login_style.css">
-<body>
+<body><img class="cover" src="/ACTA_project/res/image/cover8.png">
 <!-- login form -->
 <div class="login_form">
     <form action="/ACTA_project/indx/passwor_reset.php" method="post" name="login">

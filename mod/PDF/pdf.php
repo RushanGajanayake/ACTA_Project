@@ -6,7 +6,7 @@
  * Time: 11:30 PM
  */
 require('../../lib/FPDF/fpdf.php');
-
+header('Content-type: application/pdf');
 
 class PDF extends FPDF{
 
@@ -74,8 +74,8 @@ class PDF extends FPDF{
 
         $pdf->makeTable($AnalysisData);
 
-        $pdf->Image('../../mod/graph/barChart.png',20,150,90);
-        $pdf->Image('../../mod/graph/3DpieChart.png',120,160,70);
+        $pdf->Image('../../mod/graph/barChart.png',60,150,90);
+//        $pdf->Image('../../mod/graph/3DpieChart.png',120,160,70);
         $pdf->Ln(80);
 
         $pdf->SetFont('Arial','B',11);
@@ -95,8 +95,28 @@ class PDF extends FPDF{
         unlink('../../mod/graph/3DpieChart.png');
         unlink('../../mod/graph/barChart.png');
         unlink('../../mod/graph/compareLineChart.png');
+
         $pdf->Output("Report.pdf","I");
     }
+
+    public static function StudentData($data){
+
+        $pdf = new PDF();
+        $pdf->SetLeftMargin(25);
+        $pdf->AddPage();
+
+        $pdf->SetFont('Arial','B',16);
+//        $pdf->Cell(0,15,' Report',0,0,"C");
+        $pdf->Ln(25);
+
+        $pdf->makeTable3($data);
+        $pdf->Ln(10);
+
+
+        $pdf->Output("aa.pdf","I");
+        header("Content-type: application/pdf");
+    }
+
 
     public function makeTable($data){
 
@@ -122,6 +142,18 @@ class PDF extends FPDF{
         for($i=0;$i<$x;$i++){
             $this->Cell(60,6,$data[$i][0],1,0,"C");
             $this->Cell(40,6,$data[$i][1],1,0,"C");
+            $this->Ln();
+        }
+    }
+
+    public function makeTable3($data){
+        $this->SetFont('Arial','',10);
+
+        $x= count($data);
+
+        for($i=0;$i<$x;$i++){
+            $this->Cell(60,6,$data[$i][0],1,0,"C");
+            $this->Cell(80,6,$data[$i][1],1,0,"C");
             $this->Ln();
         }
     }
@@ -193,6 +225,134 @@ class PDF extends FPDF{
             $this->Cell(40,5,$data[$i][1],1,0,"C");
             $this->Cell(20,5,$data[$i][2],1,0,"C");
             $this->Cell(20,5,$data[$i][3],1,0,"C");
+            $this->Ln();
+        }
+    }
+
+    public static function attendanceReport($details,$data){
+
+        $pdf = new PDF();
+        $pdf->SetLeftMargin(25);
+        $pdf->AddPage();
+
+        $pdf->SetFont('Arial','B',16);
+        $pdf->Cell(0,15,'Attendance Report',0,0,"C");
+        $pdf->Ln(25);
+
+        $pdf->attenDetails($details);
+        $pdf->Ln(10);
+
+        $pdf->makeAttenTable($data);
+        $pdf->Ln(10);
+
+        $pdf->Write(5,"* - Attendance rate less than 80% ");
+
+
+        $pdf->Output("Results Report.pdf","I");
+
+    }
+    private function attenDetails($data){
+        $this->SetFont('Arial','',10);
+
+        $this->Cell(50,5,"Batch Year ",0,0,"L");
+        $this->Cell(2,5,": ",0,0,"C");
+        $this->Cell(20,5,$data[0],0,0,"L");
+        $this->Ln();
+        $this->Cell(50,5,"Course Name ",0,0,"L");
+        $this->Cell(2,5,": ",0,0,"C");
+        $this->Cell(20,5,$data[1],0,0,"L");
+        $this->Ln();
+        $this->Cell(50,5,"Level ",0,0,"L");
+        $this->Cell(2,5,": ",0,0,"C");
+        $this->Cell(20,5,$data[2],0,0,"L");
+        $this->Ln();
+        $this->Cell(50,5,"Batch ",0,0,"L");
+        $this->Cell(2,5,": ",0,0,"C");
+        $this->Cell(20,5,$data[3],0,0,"L");
+        $this->Ln();
+        $this->Cell(50,5," ",0,0,"L");
+        $this->Ln();
+        $this->Cell(50,5,"No.of Days Lectures held ",0,0,"L");
+        $this->Cell(2,5,": ",0,0,"C");
+        $this->Cell(20,5,$data[4],0,0,"L");
+        $this->Ln();
+    }
+
+    private function makeAttenTable($data){
+        $this->SetFont('Arial','',10);
+
+        $this->Cell(60,6,"Student ID",1,0,"C");
+        $this->Cell(50,6,"Percentage of Atandances",1,0,"C");
+        $this->Ln();
+
+        $x= count($data);
+
+        for($i=0;$i<$x;$i++){
+            $this->Cell(60,6,$data[$i][0],1,0,"C");
+            $this->Cell(50,6,$data[$i][1],1,0,"C");
+            $this->Ln();
+        }
+    }
+public static function attendanceReportMy($details,$data){
+
+        $pdf = new PDF();
+        $pdf->SetLeftMargin(25);
+        $pdf->AddPage();
+
+        $pdf->SetFont('Arial','B',16);
+        $pdf->Cell(0,15,'Attendance Report',0,0,"C");
+        $pdf->Ln(25);
+
+        $pdf->attenDetailsMy($details);
+        $pdf->Ln(10);
+
+        $pdf->makeAttenTableMy($data);
+        $pdf->Ln(10);
+
+
+        $pdf->Output("Results Report.pdf","I");
+
+    }
+    private function attenDetailsMy($data){
+        $this->SetFont('Arial','',10);
+
+        $this->Cell(50,5,"Student ID ",0,0,"L");
+        $this->Cell(2,5,": ",0,0,"C");
+        $this->Cell(20,5,$data[0],0,0,"L");
+        $this->Ln();
+        $this->Cell(50,5,"Student Name ",0,0,"L");
+        $this->Cell(2,5,": ",0,0,"C");
+        $this->Cell(20,5,$data[1],0,0,"L");
+        $this->Ln();
+        $this->Cell(50,5,"No.of Days Lectures held ",0,0,"L");
+        $this->Cell(2,5,": ",0,0,"C");
+        $this->Cell(20,5,$data[2],0,0,"L");
+        $this->Ln();
+        $this->Cell(50,5,"No.of Days Student Participated ",0,0,"L");
+        $this->Cell(2,5,": ",0,0,"C");
+        $this->Cell(20,5,$data[3],0,0,"L");
+        $this->Ln();
+        $this->Cell(50,5," ",0,0,"L");
+        $this->Ln();
+        $this->Cell(50,5,"Participation Precentage ",0,0,"L");
+        $this->Cell(2,5,": ",0,0,"C");
+        $this->Cell(20,5,$data[4],0,0,"L");
+        $this->Ln();
+    }
+    private function makeAttenTableMy($data){
+        $this->SetFont('Arial','',10);
+
+        $this->Cell(60,6,"Month",1,0,"C");
+        $this->Cell(50,6,"No.of Days Student Participated",1,0,"C");
+        $this->Cell(50,6,"No.of Days Lectures held",1,0,"C");
+        $this->Ln();
+
+        $x= count($data);
+
+        for($i=0;$i<$x;$i++){
+            $this->Cell(60,6,$data[$i][0],1,0,"C");
+            $this->Cell(50,6,$data[$i][1],1,0,"C");
+            $this->Cell(50,6,$data[$i][2],1,0,"C");
             $this->Ln();
         }
     }

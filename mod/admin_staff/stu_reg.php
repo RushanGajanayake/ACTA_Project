@@ -10,13 +10,11 @@ include("../../ctrl/queries.php");
 require_once("../../conn/db_conn.php");
 
 class Stu_reg{
+    public $addParent = null;
 
     //private $db_connection = null;
 
     public function __construct(){
-
-
-
 
         if(isset($_POST['add1'])){
 
@@ -25,10 +23,6 @@ class Stu_reg{
             $title = $_POST['title'];
             $firstName = $_POST['firstName'];
             $surname = $_POST['surname'];
-            //date of birth
-//            $dob_date = $_POST['dob_date'];
-//            $dob_month = $_POST['dob_month'];
-//            $dob_year = $_POST['dob_year'];
 
             $addr = $_POST['addr'];
             $city = $_POST['city'];
@@ -42,12 +36,11 @@ class Stu_reg{
             $cmp_add = $_POST['cmp_add'];
             $cmp_No = $_POST['cmp_No'];
 
-            $addParent = $_POST['yesNo'];
+            $this->addParent = $_POST['yesNo'];
 
             //$img = $_FILES['pic'];
 
 //            $dob = $dob_year."-".$dob_month."-".$dob_date;
-            $dob = $this->nicBOD($nic);
 
 
             //$img_path = $this->profImage($img);
@@ -59,14 +52,15 @@ class Stu_reg{
 
             $values1 =array($nic,$title,$firstName,$surname,$addr,$city,$p_code,$email,$tele_No,$mob_No);
 
-            $values2 = array($stu_ID,$dob,$cmp_name ,$cmp_add,$cmp_No,$reg_date,$nic,$c_ID);
+            $values2 = array($stu_ID,$cmp_name ,$cmp_add,$cmp_No,$reg_date,$nic,$c_ID);
 
 
 
             $this->add("person",$values1);
             $this->add("student",$values2);
 
-            if($addParent== 'yesCheck'){
+            if($this->addParent== 'yesCheck'){
+
 
                 $nic_P = $_POST['nicP'];
                 $title_P = $_POST['titleP'];
@@ -81,12 +75,16 @@ class Stu_reg{
 
                 $values3 =array($nic_P,$title_P,$firstName_P,$surname_P,$addr_P,$city_P,$p_code_P,$email_P,$tele_No_P,$mob_No_P);
 
-                $values4 = array($stu_ID,$nic_P);
+                $parent_id = "P/".$stu_ID;
+
+                $values4 = array($parent_id,$nic_P);
 
 
                 $this->add("person",$values3);
                 $this->add("parent",$values4);
             }
+//            elseif($this->addParent== 'noCheck' || $this->addParent==null)break;
+
 
             include("../../view/admin_staff/student_reg.php");
         }
@@ -101,10 +99,10 @@ class Stu_reg{
         $query_add = new mysqlQuery();
 
         if($query_add->insert($table,$values,$row=null)==true){
-            echo "data insert ";
+//            echo '<p style="color:#2122e4;  margin-left: 20px; text-align:center; font-family: Century Gothic; font-size:20px;background-color: #e2ebff;padding: 25px;margin: 25px; border-style: solid; border-color:#3c94dd ">Data Inserted</p>';
         }
         else{
-            echo "not insert";
+            echo '<p style="color:#e40005;  margin-left: 20px; text-align:center; font-family: Century Gothic; font-size:22px;background-color: #ffebe8;padding: 25px;margin: 25px; border-style: solid; border-color:#dd3c10 ">Data Not Inserted</p>';
         }
 
 
@@ -116,10 +114,6 @@ class Stu_reg{
         return $imgfp;
     }
 
-    private function nicBOD($nic){
-        return "2014-08-15";
-
-    }
 }
 
 $st = new Stu_reg();

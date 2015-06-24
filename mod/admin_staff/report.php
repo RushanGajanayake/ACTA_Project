@@ -62,6 +62,13 @@ class ReportMaker{
             PDF::createPDF_student($stu_details,$this->student_results);
 
         }
+        elseif(isset($_POST['search'])){
+
+            $id = $_POST['search'];
+            $data = $this->getStudentDetails($id);
+            PDF::StudentData($data);
+
+        }
 
     }
 
@@ -72,6 +79,35 @@ class ReportMaker{
         else{
             return $this->db_connection = DB_conn::conn();
         }
+    }
+
+    private function getStudentDetails($id){
+        $stu_data = array(array());
+        $i = 0;
+
+        if($this->databseConnection()){
+
+            $query = $this->db_connection->prepare("SELECT * FROM student INNER JOIN person ON student.Person_NIC = person.NIC WHERE student.Student_ID LIKE '$id%'");
+            $query->execute();
+
+            while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                $name =$row['FirstName'];
+                $last =$row['LastName'];
+                $full_name = $name." ".$last;
+
+                $stu_data[$i][0]= $row["Student_ID"];
+                $stu_data[$i][1]= $full_name;
+
+                $i++;
+            }
+
+        }
+
+        sort($stu_data);
+        $no_data = count($stu_data);
+
+        return $stu_data;
+
     }
 
     private function getDataOverall($course,$level,$year,$batch,$subject){

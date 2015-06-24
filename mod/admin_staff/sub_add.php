@@ -49,6 +49,14 @@ class subjAdd{
 
             $this->upDate("subject",$value,$where,$c_id);
         }
+        if(isset($_POST['del_sub'])){
+
+            $s_ID = $_POST['s_ID'];
+            $c_id = $_POST['c_id'];
+
+            $whr = "Sub_ID = '".$s_ID."'";
+            $this->deleteSubject("subject",$whr,$c_id);
+        }
 
     }
 
@@ -58,8 +66,15 @@ class subjAdd{
 
         if($query->insert($table,$values,$row=null)== true){
             $qury = "ajaxPost1('/ACTA_project/view/admin_staff/subj_add.php',$('#c_id'))";
+
+            echo "<div class='panel_upper'>
+                    <div class='p0'>
+                    <label class='p2'> New Subject Entered..!!</label>";
             echo "<td><input class='input data' type='hidden' name='c_id' id='c_id' value='".$c_ids."'></td>";
-            echo "<td>New Subject Entered<input class='button1' type='button' name='views' id='views' value='OK' onclick=".$qury."></td>";
+             echo "<td><input class='button1' type='button' name='views' id='views' value='OK' onclick=".$qury."></td>";
+             echo "</div></div>";
+
+
 
         }
         else{
@@ -72,11 +87,15 @@ class subjAdd{
         $query = new mysqlQuery();
 
         if($query->insert($table,$values,$row=null)== true){
-            echo "New Subject Entered to the course";
 
             $qury = "ajaxPost1('/ACTA_project/mod/admin_staff/course_details.php',$('#c_id'))";
+
+            echo "<div class='panel_upper'>
+                    <div class='p0'>
+                    <label class='p2'> New Subject Entered..!!</label>";
             echo "<td><input class='input data' type='hidden' name='c_id' id='c_id' value='".$c_ids."'></td>";
-            echo "<td>New Subject Entered<input class='button1' type='button' name='views' id='views' value='OK' onclick=".$qury."></td>";
+            echo "<td><input class='button1' type='button' name='views' id='views' value='OK' onclick=".$qury."></td>";
+            echo "</div></div>";
 
         }
         else{
@@ -91,8 +110,13 @@ class subjAdd{
         if($up_add->update($table,$values,$where)){
 //            echo "Course data updated";
             $qury = "ajaxPost1('/ACTA_project/mod/admin_staff/course_details.php',$('#c_id'))";
+
+            echo "<div class='panel_upper'>
+                    <div class='p0'>
+                    <label class='p2'> Subject Edited Successfully..!!</label>";
             echo "<td><input class='input data' type='hidden' name='c_id' id='c_id' value='".$c_id."'></td>";
-            echo "<td>Subject Edit Successfully..!!<input class='button1' type='button' name='views' id='views' value='OK' onclick=".$qury."></td>";
+            echo "<td><input class='button1' type='button' name='views' id='views' value='OK' onclick=".$qury."></td>";
+
 
         }
         else{
@@ -100,20 +124,31 @@ class subjAdd{
         }
     }
 
-    private function deleteSubject($table,$where){
+    private function deleteSubject($table,$where,$c_id){
 
 
 
         $dlt = new mysqlQuery();
 
         if($dlt->delete($table,$where)){
-            echo "Student Information Deleted";
+           // echo "Student Information Deleted";
+            $qury = "ajaxPost1('/ACTA_project/mod/admin_staff/course_details.php',$('#c_id'))";
+            echo "<div class='panel_upper'>
+                    <div class='p0'>
+                    <label class='p2'> Subject Deleted Successfully..!!</label>";
+            echo "<td><input class='input data' type='hidden' name='c_id' id='c_id' value='".$c_id."'></td>";
+            echo "<td><input class='button1' type='button' name='views' id='views' value='OK' onclick=".$qury."></td>";
+            echo "</div></div>";
+
+
         }
         else{
-            echo "Student not deleted";
+            echo "Subject not deleted";
         }
 
     }
+
+
 
 }
 

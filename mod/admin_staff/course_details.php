@@ -40,10 +40,11 @@
     ?>
 
 <div class="panel">
+    <div class="panel_body">
     <div class="panel_bar" >
         <p>Course Details - <?php echo $c_name;?> </p>
     </div>
-
+    <div class="panel_body_cont">
     <table class="table1">
         <tr class="row1">
             <td class="row_label"><label>Course ID :</label></td>
@@ -71,12 +72,15 @@
         </tr>
 
     </table>
+    </div>
+    </div>
 
     <?php } ?>
-
+    <div class="panel_body">
     <div class="panel_bar" >
         <p>Subjects Details </p>
     </div>
+    <div class="panel_body_cont">
 
        <?php
 
@@ -85,7 +89,7 @@
            $query2 = $conn->prepare("SELECT * FROM subject WHERE  Course_Course_ID ='$c_id' ");
            $query2->execute();
 
-
+            $i = 0;
 
            while($rows= $query2->fetch(PDO::FETCH_ASSOC)){
 
@@ -95,11 +99,13 @@
                $s_dscrpt = $rows['discription'];
                $ac_id = $rows['Aca_Staff_Ac_ID'];
 
+
+
                ?>
                     <table class="table1">
                         <tr class="row1">
                             <td class="row_label"><label>Subject ID :</label></td>
-                            <td class="label1"><input class='input data' type='hidden' name='s_ids' id='s_ids' value='<?php echo $s_id; ?>'><label><?php echo $s_id; ?></label></td>
+                            <td class="label1"><input class='input data' type='hidden' name='s_ids<?php echo $i;?>' id='s_ids<?php echo $i;?>' value='<?php echo $s_id; ?>'><label><?php echo $s_id; ?></label></td>
                         </tr>
                         <tr class="row2">
                             <td class="row_label"><label>Subject Name :</label></td>
@@ -115,17 +121,20 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input class="button1" type="button" name="edit" id="edit" value="Edit" onclick="ajaxPost1('/ACTA_project/view/admin_staff/edit_subj.php',$('#s_ids'))"></td>
+                            <td><input class="button1" type="button" name="edit" id="edit" value="Edit" onclick="ajaxPost1('/ACTA_project/view/admin_staff/edit_subj.php',$('#s_ids<?php echo $i;?>'))"></td>
                         </tr>
                     </table>
 
+
                 <?php
+               $i++ ;
 
            }
 
        }
 
     ?>
+
 
     <table class="table1">
 
@@ -142,55 +151,80 @@
         </tr>
 
     </table>
+    </div>
+    </div>
+
+
 
 
 
     <div id="ifYes" style="display: none">
 
-
+        <div class="panel_body">
         <div class="panel_bar" >
             <p>Add New Subject </p>
         </div>
-
+        <div class="panel_body_cont">
         <form action="/ACTA_project/mod/admin_staff/course_details.php" method="post" id="sub_add">
             <table class="table1">
                 <tr class="row1">
                     <td class="row_label">Subject ID</td>
                     <td class="input_data"><input class="input data" type="text" name="s_ID" id="s_ID"></td>
+                    <td class="error_msg" id="s_ID_e"></td>
                 </tr>
                 <tr class="row2">
                     <td class="row_label">Subject Name</td>
                     <td class="input_data"><input class="input data" type="text" name="s_name" id="s_name"></td>
+                    <td class="error_msg" id="s_name_e"></td>
                 </tr>
                 <tr class="row1">
                     <td class="row_label">Subject Credits</td>
                     <td class="input_data"><input class="input data" type="text" name="s_credit" id="s_credit"></td>
+                    <td class="error_msg" id="s_credit_e"></td>
                 </tr>
                 <tr class="row2">
                     <td class="row_label">Lecturer ID</td>
                     <td class="input_data"><input class="input data" type="text" name="ac_id" id="ac_id"></td> <!--this should be change as when admin id get from admin login session-->
+                    <td class="error_msg" id="ac_id_e"></td>
                 </tr>
                 <tr class="row1">
                     <td class="row_label">Course ID</td>
                     <td class="input_data"><input class="input data" type="text" name="c_id" id="c_id" value='<?php echo $c_id;?>' readonly="readonly"></td> <!--this should be change as when admin id get from admin login session-->
                 </tr>
+            </table>
+            <table class="table2">
                 <tr class="row2">
                     <td class="row_label">Content and Details</td>
-                    <td class="input_data"><textarea class="inputArea" name="s_details" id="s_details" rows="10" cols="30"></textarea> </td>
+                    <td class="input_textarea"><textarea class="input" name="s_details" id="s_details" rows="10" cols="30"></textarea> </td>
+                    <td class="error_msg" id="s_details_e"></td>
                 </tr>
+            </table>
+            <table class="table1">
                 <tr>
                     <td><input type="hidden" name="verifi" id="verifi" value="0"></td>
                 </tr>
                 <tr>
-                    <td><input class="button1" type="button" name="add_s" id="add_s" value="Add" onclick="ajaxPost('/ACTA_project/mod/admin_staff/sub_add.php',$('#sub_add').serialize()+'&add_s=Add')"></td>
+<!--                    <td><input class="button1" type="button" name="add_s" id="add_s" value="Add" onclick="ajaxPost('/ACTA_project/mod/admin_staff/sub_add.php',$('#sub_add').serialize()+'&add_s=Add')"></td>-->
+<!--                    <td></td>-->
+                    <td><input class="button1" type="button" name="add_s" id="add_s" value="Add" onclick="javascript:checkEmpty_subj();"></td>
                     <td></td>
+                </tr>
                 </tr>
             </table>
         </form>
+        </div>
+        </div>
 
     </div>
 
-    <button  class="button1" onclick="myFunction1('/ACTA_project/view/admin_staff/courses.php')">Back </button>
+
+    <table class="table1">
+        <tr >
+            <td><button  class="button1" onclick="myFunction1('/ACTA_project/view/admin_staff/courses.php')">Back </button></td>
+            <td></td>
+        </tr>
+    </table>
+
 </div>
 
 

@@ -13,22 +13,21 @@
     <p>Personal Details</p>
 </div>
 <div class="panel" id="panel">
+    <div class="panel_body">
+        <div class="panel_bar" >
+        </div>
+        <div class="panel_body_cont">
     <?php
     require_once("../../conn/db_conn.php");
+    require_once("../../ctrl/users.php");
 
     session_start();
 
 
     $u_nic = $_SESSION['p_nic'];
+    $details = new Users();
+    $data = $details->usersPersonalData($u_nic,'person','NIC');
 
-
-    $db = DB_conn::conn();
-
-    $query = $db->prepare('SELECT * FROM person WHERE NIC = :u_nic');
-    $query->bindValue(':u_nic',$u_nic,PDO::PARAM_STR);
-    $query->execute();
-
-    $data = $query->fetchObject();
     $nic1 = $data->NIC;
     $title = $data->Title;
     $fname = $data->FirstName;
@@ -84,15 +83,19 @@
             <td class="row_label"><label>Mobile No :</label></td>
             <td class="label1"><label><?php echo $m_no; ?></label></td>
         </tr>
+    </table>
+    <table class="table1">
         <tr >
             <td></td>
-            <td><button class="button1" onclick="myFunction1('/ACTA_project/view/parent/st_details.php')">Student Profile </button></td>
+            <td><button class="button1" onclick="myFunction1('/ACTA_project/view/parent/st_details.php')">Student Profile</button></td>
         </tr>
     </table>
+            </div>
+        </div>
 
     <table class="table1">
         <tr >
-            <td><button class="button1" onclick="myFunction1('/ACTA_project/view/prent/par_home.html')">Back </button></td>
+            <td><button class="button1" onclick="myFunction1('/ACTA_project/view/prent/par_home.php')">Back </button></td>
             <td></td>
         </tr>
     </table>

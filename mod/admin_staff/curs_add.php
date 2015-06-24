@@ -35,7 +35,7 @@ class CourseAdd{
 
         }
 
-        if(isset($_POST['edit_course'])){
+        else if(isset($_POST['edit_course'])){
 
 
             $c_ID = $_POST['c_ID'];
@@ -52,6 +52,14 @@ class CourseAdd{
 
             $this->upDate("course",$value,$where,$c_ID);
         }
+        else if(isset($_POST['delete_course'])){
+
+            $course = $_POST['c_ID'];
+
+            $whr = "Course_ID = '".$course."'";
+            $this->deleteCourse("course",$whr);
+        }
+
 
 
     }
@@ -63,8 +71,12 @@ class CourseAdd{
         if($query->insert($table,$values,$row=null)== true){
 //            include("../../view/admin_staff/subj_add.php");
             $qury = "ajaxPost1('/ACTA_project/view/admin_staff/subj_add.php',$('#c_id'))";
+            echo "<div class='panel_upper'>
+                    <div class='p0'>
+                    <label class='p2'> New Course Entered..!!</label>";
             echo "<td><input class='input data' type='hidden' name='c_id' id='c_id' value='".$c_id."'></td>";
-            echo "<td>New Course Entered..!!<input class='button1' type='button' name='views' id='views' value='OK' onclick=".$qury."></td>";
+            echo "<td><input class='button1' type='button' name='views' id='views' value='OK' onclick=".$qury."></td>";
+            echo "</div></div>";
 
         }
         else{
@@ -80,8 +92,13 @@ class CourseAdd{
         if($up_add->update($table,$values,$where)){
 //            echo "Course data updated";
             $qury = "ajaxPost1('/ACTA_project/mod/admin_staff/course_details.php',$('#c_id'))";
+            echo "<div class='panel_upper'>
+                    <div class='p0'>
+                    <label class='p2'> Course Updated Successfully..!!</label>";
             echo "<td><input class='input data' type='hidden' name='c_id' id='c_id' value='".$c_id."'></td>";
-            echo "<td>Course Edit Successfully..!!<input class='button1' type='button' name='views' id='views' value='OK' onclick=".$qury."></td>";
+            echo "<td><input class='button1' type='button' name='views' id='views' value='OK' onclick=".$qury."></td>";
+            echo "</div></div>";
+//            echo $qury;
 
         }
         else{
@@ -96,10 +113,16 @@ class CourseAdd{
         $dlt = new mysqlQuery();
 
         if($dlt->delete($table,$where)){
-            echo "Student Information Deleted";
+            $qury = "ajaxPost1('/ACTA_project/view/admin_staff/courses.php',$('#c_id'))";
+            echo "<div class='panel_upper'>
+                    <div class='p0'>
+                    <label class='p2'> Course Deleted Successfully..!!</label>";
+            echo "<td><input class='input data' type='hidden' name='c_id' id='c_id' value=''></td>";
+            echo "<td><input class='button1' type='button' name='views' id='views' value='OK' onclick=".$qury."></td>";
+            echo "</div></div>";
         }
         else{
-            echo "Student not deleted";
+//            echo "Student not deleted";
         }
 
     }

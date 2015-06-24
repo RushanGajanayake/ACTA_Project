@@ -36,7 +36,13 @@ class marksEnter{
 
             }
 
-            echo $this->m_count." Students Marks Entered";
+             $qury = "ajaxPost1('/ACTA_project/view/admin_staff/marks_add.php',$('#c_id'))";
+             echo "<div class='panel_upper'>
+                    <div class='p0'>
+                    <label class='p2'> ".$this->m_count." Students Marks Entered..!!</label>";
+             echo "<td><input class='input data' type='hidden' name='c_id' id='c_id' value=''></td>";
+             echo "<td><input class='button1' type='button' name='views' id='views' value='OK' onclick=".$qury."></td>";
+             echo "</div></div>";
          }
 
     }

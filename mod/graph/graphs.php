@@ -53,7 +53,7 @@ class GraphMaker1{
     }
 
     public static function barChart($data,$legends,$x,$y){
-        $graph = new Graph(600,400,'auto');
+        $graph = new Graph(800,600,'auto');
         $graph->SetScale('textlin');
 
         $graph->SetShadow();

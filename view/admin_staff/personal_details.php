@@ -12,6 +12,10 @@
     <p>Personal Details</p>
 </div>
 <div class="panel" id="panel">
+    <div class="panel_body">
+        <div class="panel_bar" >
+        </div>
+        <div class="panel_body_cont">
     <?php
         require_once("../../conn/db_conn.php");
 
@@ -103,5 +107,7 @@
         </tr>
 
     </table>
+            </div>
+        </div>
 </div>
 </body>

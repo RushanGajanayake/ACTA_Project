@@ -23,81 +23,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="marks_enter.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mod/admin_staff/marks_enter.php">
+      <file leaf-file-name="student_reg.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/admin_staff/student_reg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="60.76923" vertical-offset="1580" max-vertical-offset="2142">
+            <state line="251" column="78" selection-start="12799" selection-end="12799" vertical-scroll-proportion="-147.34616" vertical-offset="351" max-vertical-offset="5865">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="marks.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mod/admin_staff/marks.php">
+      <file leaf-file-name="stu_add.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/admin_staff/stu_add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2057">
-              <folding>
-                <marker date="1414482489002" expanded="true" signature="1339:1388" placeholder="SELECT * FRO..student..." />
-                <marker date="1414482489002" expanded="true" signature="1779:1843" placeholder="..." />
-                <marker date="1414482489002" expanded="true" signature="1886:2193" placeholder="..." />
-                <marker date="1414482489002" expanded="true" signature="1990:2193" placeholder="..." />
-                <marker date="1414482489002" expanded="true" signature="2025:2193" placeholder="..." />
-                <marker date="1414482489002" expanded="true" signature="2055:2180" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lect_reg.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mod/admin_staff/lect_reg.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1139">
+            <state line="72" column="48" selection-start="2746" selection-end="2746" vertical-scroll-proportion="-13.653846" vertical-offset="767" max-vertical-offset="1479">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getNames.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mod/admin_staff/getNames.php">
+      <file leaf-file-name="courses.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/admin_staff/courses.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1462">
-              <folding>
-                <marker date="1414482488995" expanded="true" signature="268:416" placeholder="SELECT * FRO..student..." />
-                <marker date="1414482488995" expanded="true" signature="1155:1299" placeholder="SELECT * FRO..person..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event_handler.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mod/admin_staff/event_handler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="14.346154" vertical-offset="373" max-vertical-offset="935">
+            <state line="37" column="2" selection-start="707" selection-end="707" vertical-scroll-proportion="-15.423077" vertical-offset="228" max-vertical-offset="1326">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attendance.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mod/admin_staff/attendance.php">
+      <file leaf-file-name="sub_add.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mod/admin_staff/sub_add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="44" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.5355191" vertical-offset="777" max-vertical-offset="2142">
+            <state line="59" column="0" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="2737">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit_subj.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/admin_staff/edit_subj.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="31" selection-start="1000" selection-end="1000" vertical-scroll-proportion="-7.0384617" vertical-offset="497" max-vertical-offset="1581">
               <folding>
-                <marker date="1414482488941" expanded="true" signature="1545:1594" placeholder="SELECT * FRO..student..." />
-                <marker date="1414482488941" expanded="true" signature="1985:2058" placeholder="..." />
-                <marker date="1414482488941" expanded="true" signature="2101:2420" placeholder="..." />
-                <marker date="1414482488941" expanded="true" signature="2212:2420" placeholder="..." />
-                <marker date="1414482488941" expanded="true" signature="2247:2420" placeholder="..." />
-                <marker date="1414482488941" expanded="true" signature="2277:2407" placeholder="..." />
+                <marker date="1421584161890" expanded="true" signature="256:299" placeholder="SELECT * FRO..subject..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="curs_add.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mod/admin_staff/curs_add.php">
+      <file leaf-file-name="subj_add.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/admin_staff/subj_add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="58.653847" vertical-offset="1525" max-vertical-offset="2074">
+            <state line="21" column="28" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="359" max-vertical-offset="2057">
               <folding />
             </state>
           </provider>
@@ -106,32 +82,42 @@
       <file leaf-file-name="course_details.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mod/admin_staff/course_details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="115.53846" vertical-offset="3004" max-vertical-offset="3553">
+            <state line="29" column="85" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="4131">
               <folding>
-                <marker date="1414482488984" expanded="true" signature="516:561" placeholder="SELECT * FRO..course..." />
-                <marker date="1414482488984" expanded="true" signature="2393:2447" placeholder="SELECT * FRO..subject..." />
+                <marker date="1421349830678" expanded="true" signature="516:561" placeholder="SELECT * FRO..course..." />
+                <marker date="1421349830678" expanded="true" signature="2539:2593" placeholder="SELECT * FRO..subject..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attendance_reports.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mod/admin_staff/attendance_reports.php">
+      <file leaf-file-name="marks_enter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mod/admin_staff/marks_enter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1513">
-              <folding>
-                <marker date="1414482488976" expanded="true" signature="1258:1307" placeholder="SELECT * FRO..student..." />
-                <marker date="1414482488976" expanded="true" signature="1737:1855" placeholder="SELECT * FRO..attendence..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="attendance_eneter.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mod/admin_staff/attendance_eneter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.23077" vertical-offset="526" max-vertical-offset="1088">
+            <state line="61" column="9" selection-start="1775" selection-end="1775" vertical-scroll-proportion="-36.615383" vertical-offset="0" max-vertical-offset="2244">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="marks_add.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/admin_staff/marks_add.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="63" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.420765" vertical-offset="330" max-vertical-offset="1836">
+              <folding>
+                <marker date="1435124811075" expanded="true" signature="1824:1844" placeholder="SELECT * FRO..course..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stu_reg.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mod/admin_staff/stu_reg.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="41" selection-start="531" selection-end="531" vertical-scroll-proportion="-9.192307" vertical-offset="84" max-vertical-offset="2040">
+              <folding>
+                <marker date="1421770884615" expanded="false" signature="3072:3266" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,57 +132,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/view/admin_staff/getData.php" />
-        <option value="$PROJECT_DIR$/res/css/content.css" />
-        <option value="$PROJECT_DIR$/mod/admin_staff/marks.php" />
-        <option value="$PROJECT_DIR$/mod/admin_staff/lect_reg.php" />
-        <option value="$PROJECT_DIR$/view/admin_staff/lecture_reg.php" />
-        <option value="$PROJECT_DIR$/view/admin_staff/courses.html" />
-        <option value="$PROJECT_DIR$/view/admin_staff/courses.php" />
-        <option value="$PROJECT_DIR$/mod/admin_staff/event.php" />
-        <option value="$PROJECT_DIR$/mod/admin_staff/event_handler.php" />
-        <option value="$PROJECT_DIR$/view/admin_staff/event.php" />
-        <option value="$PROJECT_DIR$/view/admin_staff/subj_add.php" />
-        <option value="$PROJECT_DIR$/mod/PDF/pdf.php" />
-        <option value="$PROJECT_DIR$/view/admin_staff/marks_add.php" />
-        <option value="$PROJECT_DIR$/view/admin_staff/edit_course.php" />
-        <option value="$PROJECT_DIR$/view/admin_staff/edit_subj.php" />
-        <option value="$PROJECT_DIR$/mod/admin_staff/sub_add.php" />
-        <option value="$PROJECT_DIR$/mod/admin_staff/curs_add.php" />
-        <option value="$PROJECT_DIR$/mod/admin_staff/course_details.php" />
-        <option value="$PROJECT_DIR$/view/admin_staff/course_add.php" />
-        <option value="$PROJECT_DIR$/view/admin_staff/attendance_add.php" />
-        <option value="$PROJECT_DIR$/mod/admin_staff/attendance.php" />
-        <option value="$PROJECT_DIR$/mod/admin_staff/attendance_eneter.php" />
-        <option value="$PROJECT_DIR$/view/admin_staff/report.html" />
-        <option value="$PROJECT_DIR$/view/admin_staff/attendance_report.php" />
-        <option value="$PROJECT_DIR$/view/parent/parent_details.php" />
-        <option value="$PROJECT_DIR$/view/parent/st_details.php" />
-        <option value="$PROJECT_DIR$/view/parent/get_report.php" />
-        <option value="$PROJECT_DIR$/mod/admin_staff/attendance_reports.php" />
-        <option value="$PROJECT_DIR$/view/parent/marks_report.php" />
-        <option value="$PROJECT_DIR$/mod/student/mark.php" />
-        <option value="$PROJECT_DIR$/mod/student/mark_view.php" />
+        <option value="$PROJECT_DIR$/mod/admin_staff/notification.php" />
+        <option value="$PROJECT_DIR$/mod/admin_staff/reply_msg.php" />
+        <option value="$PROJECT_DIR$/view/forgot_pass.php" />
+        <option value="$PROJECT_DIR$/view/not_logged.php" />
         <option value="$PROJECT_DIR$/view/student/stu_marks.php" />
-        <option value="$PROJECT_DIR$/mod/student/payment.php" />
-        <option value="$PROJECT_DIR$/view/student/Stu_details.php" />
+        <option value="$PROJECT_DIR$/view/student/stu_report.html" />
+        <option value="$PROJECT_DIR$/view/student/stu_course.php" />
+        <option value="$PROJECT_DIR$/mod/student/mark_view.php" />
+        <option value="$PROJECT_DIR$/view/lec view/lec_details.php" />
+        <option value="$PROJECT_DIR$/mod/admin_staff/Course_details2.php" />
+        <option value="$PROJECT_DIR$/view/lec view/lec_course.php" />
+        <option value="$PROJECT_DIR$/view/student/stu_rprt_main.php" />
+        <option value="$PROJECT_DIR$/view/student/stu_report.php" />
+        <option value="$PROJECT_DIR$/view/student/attendance_report.php" />
+        <option value="$PROJECT_DIR$/view/admin_staff/course_add.php" />
+        <option value="$PROJECT_DIR$/view/admin_staff/subj_add.php" />
+        <option value="$PROJECT_DIR$/res/css/login_style.css" />
+        <option value="$PROJECT_DIR$/mod/admin_staff/sub_add.php" />
+        <option value="$PROJECT_DIR$/view/admin_staff/edit_course.php" />
+        <option value="$PROJECT_DIR$/mod/admin_staff/curs_add.php" />
+        <option value="$PROJECT_DIR$/mod/admin_staff/stu_reg.php" />
+        <option value="$PROJECT_DIR$/mod/admin_staff/marks.php" />
+        <option value="$PROJECT_DIR$/view/admin_staff/getData.php" />
+        <option value="$PROJECT_DIR$/view/home_pages/lecture_homepage.php" />
+        <option value="$PROJECT_DIR$/view/home_pages/parent_homepage.php" />
+        <option value="$PROJECT_DIR$/view/admin_staff/lecture_reg.php" />
+        <option value="$PROJECT_DIR$/mod/admin_staff/marks_enter.php" />
+        <option value="$PROJECT_DIR$/view/admin_staff/update_form.php" />
+        <option value="$PROJECT_DIR$/mod/admin_staff/lect_reg.php" />
         <option value="$PROJECT_DIR$/view/home_pages/stu_homepage.php" />
         <option value="$PROJECT_DIR$/mod/student/Studentdata.php" />
-        <option value="$PROJECT_DIR$/view/student/stu_report.html" />
-        <option value="$PROJECT_DIR$/view/parent/gt_report.html" />
-        <option value="$PROJECT_DIR$/view/student/stu_course.php" />
-        <option value="$PROJECT_DIR$/view/student/stu_report.php" />
-        <option value="$PROJECT_DIR$/view/student/stu_payment.php" />
-        <option value="$PROJECT_DIR$/mod/student/course_view.php" />
-        <option value="$PROJECT_DIR$/view/home_pages/parent_homepage.php" />
-        <option value="$PROJECT_DIR$/view/lecturer/lec_courses.php" />
-        <option value="$PROJECT_DIR$/view/lecturer/lec_details.php" />
-        <option value="$PROJECT_DIR$/view/home_pages/lecture_homepage.php" />
-        <option value="$PROJECT_DIR$/view/home_pages/logged.php" />
-        <option value="$PROJECT_DIR$/res/css/admin.css" />
-        <option value="$PROJECT_DIR$/view/admin_staff/manage_details.html" />
-        <option value="$PROJECT_DIR$/view/admin_staff/student_reg.php" />
+        <option value="$PROJECT_DIR$/mod/PDF/pdf.php" />
+        <option value="$PROJECT_DIR$/mod/parent/reprt.php" />
+        <option value="$PROJECT_DIR$/view/parent/marks_report.php" />
+        <option value="$PROJECT_DIR$/view/parent/par_atten_report.php" />
+        <option value="$PROJECT_DIR$/mod/parent/attendence_data.php" />
+        <option value="$PROJECT_DIR$/view/parent/get_report.php" />
         <option value="$PROJECT_DIR$/view/admin_staff/stu_check.php" />
+        <option value="$PROJECT_DIR$/view/admin_staff/batchmarks_report.php" />
+        <option value="$PROJECT_DIR$/view/admin_staff/progress_report.php" />
+        <option value="$PROJECT_DIR$/view/lec view/lec_notifi.php" />
+        <option value="$PROJECT_DIR$/ctrl/notifi.php" />
+        <option value="$PROJECT_DIR$/mod/admin_staff/attendance_reports.php" />
+        <option value="$PROJECT_DIR$/view/admin_staff/attendance_report.php" />
+        <option value="$PROJECT_DIR$/mod/admin_staff/allStudents.php" />
+        <option value="$PROJECT_DIR$/view/home_pages/logged.php" />
+        <option value="$PROJECT_DIR$/view/admin_staff/all_stu.php" />
+        <option value="$PROJECT_DIR$/view/admin_staff/student_reg.php" />
+        <option value="$PROJECT_DIR$/view/parent/st_details.php" />
+        <option value="$PROJECT_DIR$/view/admin_staff/stu_add.php" />
+        <option value="$PROJECT_DIR$/view/admin_staff/marks_add.php" />
       </list>
     </option>
   </component>
@@ -206,6 +192,34 @@
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>File Watchers</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>UndefinedPHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -280,24 +294,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lecturer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACTA_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="home_pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -330,57 +326,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACTA_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACTA_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACTA_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parent" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -402,20 +348,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACTA_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -425,14 +357,19 @@
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="SearchEverywhereHistory" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\ACTA_Project\mod\admin_staff" />
       <recent name="C:\wamp\www\ACTA_project\mod\admin_staff" />
       <recent name="C:\wamp\www\ACTA_project\New folder\test" />
       <recent name="C:\wamp\www\ACTA_project\proj\New folder" />
       <recent name="C:\wamp\www\ACTA_project\proj\indx" />
-      <recent name="C:\wamp\www\ACTA_project\proj" />
     </key>
   </component>
   <component name="RunManager">
@@ -478,18 +415,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24816984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18228404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -516,440 +453,294 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/attendance.php">
+    <entry file="file://$PROJECT_DIR$/mod/student/mark_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
-          <folding>
-            <marker date="1414482488941" expanded="true" signature="1545:1594" placeholder="SELECT * FRO..student..." />
-            <marker date="1414482488941" expanded="true" signature="1985:2058" placeholder="..." />
-            <marker date="1414482488941" expanded="true" signature="2101:2420" placeholder="..." />
-            <marker date="1414482488941" expanded="true" signature="2212:2420" placeholder="..." />
-            <marker date="1414482488941" expanded="true" signature="2247:2420" placeholder="..." />
-            <marker date="1414482488941" expanded="true" signature="2277:2407" placeholder="..." />
-          </folding>
-        </state>
+        <state line="32" column="38" selection-start="841" selection-end="841" vertical-scroll-proportion="-0.95368785" vertical-offset="1015" max-vertical-offset="1598" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/home_pages/logged.php">
+    <entry file="file://$PROJECT_DIR$/mod/student/course_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="2840" selection-end="2840" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="4471">
-          <folding>
-            <marker date="1414482489277" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..person..." />
-          </folding>
-        </state>
+        <state line="83" column="36" selection-start="2808" selection-end="2808" vertical-scroll-proportion="1.890223" vertical-offset="309" max-vertical-offset="1734" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/css/admin.css">
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/attendance_add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6052">
-          <folding>
-            <marker date="1414482489081" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1414482489081" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1414482489081" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1414482489081" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1414482489081" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1414482489081" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
+        <state line="87" column="64" selection-start="4025" selection-end="4025" vertical-scroll-proportion="-0.22280702" vertical-offset="1606" max-vertical-offset="2380" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/stu_check.php">
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/getData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="0" selection-start="5602" selection-end="5602" vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="2907">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/parent/st_details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="41" selection-start="253" selection-end="253" vertical-scroll-proportion="0.39323843" vertical-offset="0" max-vertical-offset="2380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/parent/gt_report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="627" selection-end="627" vertical-scroll-proportion="0.4025501" vertical-offset="0" max-vertical-offset="549">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/home_pages/stu_homepage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="104" selection-start="1725" selection-end="1725" vertical-scroll-proportion="-0.0" vertical-offset="1020" max-vertical-offset="3128">
-          <folding>
-            <element signature="e#6#99#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/home_pages/parent_homepage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="100" selection-start="2495" selection-end="2495" vertical-scroll-proportion="-13.269231" vertical-offset="845" max-vertical-offset="3026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/lecturer/lec_home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588" />
+        <state line="16" column="0" selection-start="224" selection-end="224" vertical-scroll-proportion="0.3207547" vertical-offset="0" max-vertical-offset="1224" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/home_pages/lecture_homepage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="45" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="2533">
-          <folding />
-        </state>
+        <state line="51" column="77" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.93333334" vertical-offset="335" max-vertical-offset="6732" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/lecture_reg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="67" selection-start="6522" selection-end="6522" vertical-scroll-proportion="-73.23077" vertical-offset="204" max-vertical-offset="2635" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/home_pages/parent_homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="73" selection-start="1287" selection-end="1287" vertical-scroll-proportion="-7.1923075" vertical-offset="612" max-vertical-offset="6171" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mod/student/Studentdata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="29" selection-start="3126" selection-end="3126" vertical-scroll-proportion="-0.8772242" vertical-offset="1785" max-vertical-offset="2822" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/student/Stu_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/home_pages/stu_homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="14" selection-start="1394" selection-end="1394" vertical-scroll-proportion="0.712204" vertical-offset="612" max-vertical-offset="6426" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/admin_staff/update_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="87.26923" vertical-offset="2269" max-vertical-offset="2839">
-          <folding />
-        </state>
+        <state line="35" column="36" selection-start="668" selection-end="668" vertical-scroll-proportion="0.8947368" vertical-offset="0" max-vertical-offset="3043" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/css/admin.css">
+    <entry file="file://$PROJECT_DIR$/mod/admin_staff/lect_reg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="336" column="17" selection-start="5406" selection-end="5406" vertical-scroll-proportion="0.0" vertical-offset="5260" max-vertical-offset="6052">
-          <folding>
-            <marker date="1414482489081" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1414482489081" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1414482489081" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1414482489081" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1414482489081" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1414482489081" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
+        <state line="41" column="62" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.7890223" vertical-offset="152" max-vertical-offset="1156" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/subj_add.php">
+    <entry file="file://$PROJECT_DIR$/mod/PDF/pdf.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="2469" selection-end="2578" vertical-scroll-proportion="0.79122806" vertical-offset="552" max-vertical-offset="1122">
-          <folding />
-        </state>
+        <state line="113" column="0" selection-start="2986" selection-end="2986" vertical-scroll-proportion="75.19231" vertical-offset="3876" max-vertical-offset="6307" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/student_reg.php">
+    <entry file="file://$PROJECT_DIR$/mod/parent/reprt.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="207" column="0" selection-start="8800" selection-end="8800" vertical-scroll-proportion="6.173684" vertical-offset="0" max-vertical-offset="3621">
-          <folding>
-            <element signature="e#6#99#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="44" column="38" selection-start="913" selection-end="913" vertical-scroll-proportion="0.15437393" vertical-offset="573" max-vertical-offset="1972" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/home_pages/logged.php">
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/reports.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="2840" selection-end="2840" vertical-scroll-proportion="-18.0" vertical-offset="858" max-vertical-offset="4471">
-          <folding>
-            <marker date="1414482489277" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..person..." />
-          </folding>
-        </state>
+        <state line="23" column="127" selection-start="1069" selection-end="1107" vertical-scroll-proportion="0.5368421" vertical-offset="0" max-vertical-offset="570" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/stu_check.php">
+    <entry file="file://$PROJECT_DIR$/view/parent/marks_report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="0" selection-start="4067" selection-end="4067" vertical-scroll-proportion="-77.15385" vertical-offset="0" max-vertical-offset="2108">
-          <folding />
-        </state>
+        <state line="68" column="4" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.97017545" vertical-offset="518" max-vertical-offset="1292" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/stu_add.php">
+    <entry file="file://$PROJECT_DIR$/mod/student/attendance_reports.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588">
-          <folding />
-        </state>
+        <state line="211" column="21" selection-start="7208" selection-end="7208" vertical-scroll-proportion="0.7017544" vertical-offset="3187" max-vertical-offset="3825" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/report.html">
+    <entry file="file://$PROJECT_DIR$/view/parent/parent_details.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="905" selection-end="905" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="408">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1836" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/student/attendance_report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="30" selection-start="298" selection-end="298" vertical-scroll-proportion="0.087478556" vertical-offset="204" max-vertical-offset="1904" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/parent/par_atten_report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="32" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="2040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/parent/get_report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="18" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.6421053" vertical-offset="76" max-vertical-offset="646" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mod/parent/attendence_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="41" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="3740" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/edit_course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="227" selection-end="371" vertical-scroll-proportion="0.3877193" vertical-offset="0" max-vertical-offset="1632" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/batchmarks_report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="34" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.81646657" vertical-offset="408" max-vertical-offset="1768" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/course_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="111" selection-end="150" vertical-scroll-proportion="0.32807016" vertical-offset="0" max-vertical-offset="1972" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/lec view/lec_notifi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="53" selection-start="1188" selection-end="1188" vertical-scroll-proportion="1.2824562" vertical-offset="0" max-vertical-offset="1071" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mod/admin_staff/notification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.35789475" vertical-offset="204" max-vertical-offset="2601" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctrl/notifi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="111" selection-start="1129" selection-end="1129" vertical-scroll-proportion="1.3499142" vertical-offset="114" max-vertical-offset="1513" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/notifi_inbox.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="16" selection-start="196" selection-end="196" vertical-scroll-proportion="0.02982456" vertical-offset="68" max-vertical-offset="1139" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/attendance_report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="63" selection-start="7518" selection-end="7518" vertical-scroll-proportion="0.3140351" vertical-offset="2371" max-vertical-offset="2941" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/admin_staff/progress_report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1768">
+        <state line="51" column="34" selection-start="1389" selection-end="2276" vertical-scroll-proportion="0.787307" vertical-offset="408" max-vertical-offset="2142" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/parent/st_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="35" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="2278" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/stu_check.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="24" selection-start="3420" selection-end="3460" vertical-scroll-proportion="1.4807018" vertical-offset="482" max-vertical-offset="2703" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mod/admin_staff/attendance_reports.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="50" selection-start="3878" selection-end="3878" vertical-scroll-proportion="3.877193" vertical-offset="0" max-vertical-offset="3978" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mod/admin_staff/allStudents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="10" selection-start="2981" selection-end="2981" vertical-scroll-proportion="1.3789474" vertical-offset="999" max-vertical-offset="2074" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/all_stu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="64" selection-start="3476" selection-end="3476" vertical-scroll-proportion="0.65008575" vertical-offset="947" max-vertical-offset="1802" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/home_pages/logged.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="512" column="0" selection-start="18980" selection-end="18980" vertical-scroll-proportion="0.0" vertical-offset="8687" max-vertical-offset="17612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mod/admin_staff/report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="13" selection-start="4129" selection-end="4129" vertical-scroll-proportion="0.0" vertical-offset="2693" max-vertical-offset="7395" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mod/admin_staff/marks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="0" selection-start="3627" selection-end="3627" vertical-scroll-proportion="0.0" vertical-offset="1004" max-vertical-offset="2142">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/admin_staff/personal_details.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1904">
-          <folding>
-            <marker date="1414482489213" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..person..." />
-            <marker date="1414482489213" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..admin_staff..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/parent_reg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/manage_details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="7" selection-start="1065" selection-end="1065" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/lecture_reg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/getData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
-          <folding>
-            <marker date="1414482489188" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..course..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="969">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/edit_subj.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="31.192308" vertical-offset="811" max-vertical-offset="1360">
-          <folding>
-            <marker date="1414482489178" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..subject..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/edit_course.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="31.192308" vertical-offset="811" max-vertical-offset="1360">
-          <folding>
-            <marker date="1414482489174" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..course..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/marks_add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1479">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/course_add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="471" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/courses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.7692307" vertical-offset="46" max-vertical-offset="1207">
-          <folding>
-            <marker date="1414482489169" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..course..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/batchmarks_report.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="35.26923" vertical-offset="917" max-vertical-offset="1479">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/course.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/attendance_report.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.386121" vertical-offset="1903" max-vertical-offset="2465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_staff/attendance_add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="323" selection-end="424" vertical-scroll-proportion="0.49544626" vertical-offset="0" max-vertical-offset="2057">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/sub_add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="61.26923" vertical-offset="1593" max-vertical-offset="2142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/stu_update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="44.923077" vertical-offset="1168" max-vertical-offset="1717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/stu_reg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="60.76923" vertical-offset="1580" max-vertical-offset="2142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/reslt_report.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="45.076923" vertical-offset="1172" max-vertical-offset="1734">
-          <folding>
-            <marker date="1414482489047" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..marks..." />
-            <marker date="1414482489047" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..subject..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/report.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="239.76923" vertical-offset="6234" max-vertical-offset="6783">
-          <folding>
-            <marker date="1414482489046" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..marks..." />
-            <marker date="1414482489046" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..marks..." />
-            <marker date="1414482489046" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..marks..." />
-            <marker date="1414482489046" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..subject..." />
-            <marker date="1414482489046" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..student..." />
-            <marker date="1414482489046" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..subject..." />
-            <marker date="1414482489046" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..aca_staff..." />
-            <marker date="1414482489046" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..person..." />
-            <marker date="1414482489046" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..student..." />
-            <marker date="1414482489046" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..person..." />
-            <marker date="1414482489046" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..course..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/pare_reg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="22.192308" vertical-offset="577" max-vertical-offset="1139">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/marks_enter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="60.76923" vertical-offset="1580" max-vertical-offset="2142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/marks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2057">
-          <folding>
-            <marker date="1414482489002" expanded="true" signature="1339:1388" placeholder="SELECT * FRO..student..." />
-            <marker date="1414482489002" expanded="true" signature="1779:1843" placeholder="..." />
-            <marker date="1414482489002" expanded="true" signature="1886:2193" placeholder="..." />
-            <marker date="1414482489002" expanded="true" signature="1990:2193" placeholder="..." />
-            <marker date="1414482489002" expanded="true" signature="2025:2193" placeholder="..." />
-            <marker date="1414482489002" expanded="true" signature="2055:2180" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/lect_reg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/getNames.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
-          <folding>
-            <marker date="1414482488995" expanded="true" signature="268:416" placeholder="SELECT * FRO..student..." />
-            <marker date="1414482488995" expanded="true" signature="1155:1299" placeholder="SELECT * FRO..person..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/event_handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="14.346154" vertical-offset="373" max-vertical-offset="935">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6963979" vertical-offset="989" max-vertical-offset="2006" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mod/admin_staff/curs_add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="58.653847" vertical-offset="1525" max-vertical-offset="2074">
+        <state line="82" column="40" selection-start="2543" selection-end="2543" vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="2465">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mod/admin_staff/course_details.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="115.53846" vertical-offset="3004" max-vertical-offset="3553">
+        <state line="29" column="85" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="4131">
           <folding>
-            <marker date="1414482488984" expanded="true" signature="516:561" placeholder="SELECT * FRO..course..." />
-            <marker date="1414482488984" expanded="true" signature="2393:2447" placeholder="SELECT * FRO..subject..." />
+            <marker date="1421349830678" expanded="true" signature="516:561" placeholder="SELECT * FRO..course..." />
+            <marker date="1421349830678" expanded="true" signature="2539:2593" placeholder="SELECT * FRO..subject..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/attendance_reports.php">
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/subj_add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1513">
-          <folding>
-            <marker date="1414482488976" expanded="true" signature="1258:1307" placeholder="SELECT * FRO..student..." />
-            <marker date="1414482488976" expanded="true" signature="1737:1855" placeholder="SELECT * FRO..attendence..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/attendance_eneter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.23077" vertical-offset="526" max-vertical-offset="1088">
+        <state line="21" column="28" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="359" max-vertical-offset="2057">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mod/admin_staff/attendance.php">
+    <entry file="file://$PROJECT_DIR$/mod/admin_staff/sub_add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="44" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.5355191" vertical-offset="777" max-vertical-offset="2142">
+        <state line="59" column="0" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="2737">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/edit_subj.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="31" selection-start="1000" selection-end="1000" vertical-scroll-proportion="-7.0384617" vertical-offset="497" max-vertical-offset="1581">
           <folding>
-            <marker date="1414482488941" expanded="true" signature="1545:1594" placeholder="SELECT * FRO..student..." />
-            <marker date="1414482488941" expanded="true" signature="1985:2058" placeholder="..." />
-            <marker date="1414482488941" expanded="true" signature="2101:2420" placeholder="..." />
-            <marker date="1414482488941" expanded="true" signature="2212:2420" placeholder="..." />
-            <marker date="1414482488941" expanded="true" signature="2247:2420" placeholder="..." />
-            <marker date="1414482488941" expanded="true" signature="2277:2407" placeholder="..." />
+            <marker date="1421584161890" expanded="true" signature="256:299" placeholder="SELECT * FRO..subject..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/courses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="2" selection-start="707" selection-end="707" vertical-scroll-proportion="-15.423077" vertical-offset="228" max-vertical-offset="1326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mod/admin_staff/stu_reg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="41" selection-start="531" selection-end="531" vertical-scroll-proportion="-9.192307" vertical-offset="84" max-vertical-offset="2040">
+          <folding>
+            <marker date="1421770884615" expanded="false" signature="3072:3266" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/student_reg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="251" column="78" selection-start="12799" selection-end="12799" vertical-scroll-proportion="-147.34616" vertical-offset="351" max-vertical-offset="5865">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/stu_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="48" selection-start="2746" selection-end="2746" vertical-scroll-proportion="-13.653846" vertical-offset="767" max-vertical-offset="1479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mod/admin_staff/marks_enter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="9" selection-start="1775" selection-end="1775" vertical-scroll-proportion="-36.615383" vertical-offset="0" max-vertical-offset="2244">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_staff/marks_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="63" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.420765" vertical-offset="330" max-vertical-offset="1836">
+          <folding>
+            <marker date="1435124811075" expanded="true" signature="1824:1844" placeholder="SELECT * FRO..course..." />
           </folding>
         </state>
       </provider>

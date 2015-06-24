@@ -11,12 +11,12 @@ require_once("../../conn/db_conn.php");
 
 $conn = DB_conn::conn();
 
-if($_POST['search'])
+if(isset($_POST['search']))
 {
     $q=$_POST['search'];
 
     if($q==null){
-        echo "<select id='level' name='level'>";
+        echo "<select class='input data' id='level' name='level'>";
         echo "<option value=' '></option>";
         echo "</select>";
     }
@@ -29,7 +29,7 @@ if($_POST['search'])
 
 
 
-    echo "<select id='level' name='level'>";
+    echo "<select class='input data' id='level' name='level'>";
     echo "<option value=' '></option>";
 
     for($i=1;$i<($no_of_levels+1);$i++){
@@ -40,24 +40,33 @@ if($_POST['search'])
 
 
 }
+else if($_POST['search2'])
+{
+    $q1=$_POST['search2'];
 
-//if($_POST['search_stu'])
-//{
-//    $q=$_POST['search_stu'];
-//
-//    $qry = $conn->prepare("SELECT * FROM person WHERE FirstName LIKE '%$q%'");
-//    $qry->execute();
-//
-//
-//    while($row= $qry->fetch(PDO::FETCH_ASSOC)){
-//
-//        echo "<tr>";
-//        echo "<td>".$row['FirstName']."</td>";
-//        echo "<td>".$row['LastName']."</td>";
-//        echo "</tr>";
-//
-//    }
-//
-//}
+    if($q1==null){
+        echo "<select class='input data' id='subject' name='subject'>";
+        echo "<option value=' '></option>";
+        echo "</select>";
+    }
+
+    $qry = $conn->prepare("SELECT * FROM subject WHERE Course_Course_ID LIKE '%$q1%'");
+    $qry->execute();
+
+    echo "<select class='input data' id='subject' name='subject'>";
+    echo "<option value=' '></option>";
+
+    while($row= $qry->fetch(PDO::FETCH_ASSOC)){
+        $sub_id = $row['Sub_ID'];
+        $sub_name = $row['Sub_Name'];
+
+        echo "<option value='".$sub_id."'>".$sub_name."</option>";
+    }
+
+
+
+    echo "</select>";
+}
+
 
 ?>

@@ -6,7 +6,7 @@
  * Time: 2:11 PM
  */
 
-require_once("../conn/db_conn.php");
+require_once("conn/db_conn.php");
 
 class Login{
 

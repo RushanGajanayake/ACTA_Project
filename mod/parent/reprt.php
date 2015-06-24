@@ -24,6 +24,7 @@ class StuReportMaker{
 
             $id = $_POST['stu_Id'];
 
+
             $this->getDataIndividual($id);
 
             $stu_details = $this->otherDetails_stu($id);

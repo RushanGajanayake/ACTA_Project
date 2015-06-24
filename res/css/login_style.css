@@ -1,7 +1,13 @@
 
 body{
-    background: #0080f8;
+    /*background: #0080f8;*/
+    /*z-index: -1;*/
 
+}
+.cover{
+    padding-top: 82px;
+    position: absolute;
+    z-index: -1;
 }
 
 a{
@@ -24,9 +30,9 @@ a{
     margin: 0 auto;
     position: relative;
 
-    background: #9DCFFB;
-    border: 17px solid #003d76;
-    outline: 28px solid #FFFFFF;
+    background: #eaebec;
+    border: 17px solid #ffffff;
+    outline: 28px solid #989ba3;
 
 
     box-shadow: 0 1px 500px rgba(F,F,F,0.5);
@@ -47,7 +53,8 @@ a{
     height:20.883%;
     position: relative;
 
-    background: #0266c4;
+    background: #c6c9d1;
+    /*border: 1px solid #797c84;*/
 
 
 }
@@ -71,8 +78,10 @@ a{
     height: 140px;
     position: relative;
 
-    background: #d9e5f1;
-    border: 8px solid #A1BDC3;
+    background: #dbdcdd;
+    border: 8px solid #c6c9d1;
+     border-radius: 4px;
+    border-right: none;
 }
 
 .footer{
@@ -107,8 +116,9 @@ a{
     font-size: 15px;
     color: #FFFFFF;
 
-    background: #0166c4;
+    background: #8c8f97;
     border: 0px;
+    border-radius: 4px;
 }
  .footer .footer_r .log_button .submit:hover{
 
@@ -124,6 +134,7 @@ a{
 
     background: #060c4f;
     border: 2px;
+    border-radius: 4px;
 }
 
 
@@ -201,15 +212,16 @@ a{
     height: 250px;
     margin: 0 auto;
     position: relative;
+    padding-top: 20px;
 
-    background: #9DCFFB;
-    border: 17px solid #003d76;
-    outline: 28px solid #FFFFFF;
+    background: #eaebec;
+    border: 17px solid #ffffff;
+    outline: 28px solid #a6a9b1;
 
 
-    box-shadow: 0 1px 500px rgba(F,F,F,0.5);
-    -moz-box-shadow: 0 1px 500px rgba(F,F,F,0.5);
-    -webkit-box-shadow: 0 1px 500px rgba(F,F,F,0.5);
+    /*box-shadow: 0 1px 500px rgba(F,F,F,0.5);*/
+    /*-moz-box-shadow: 0 1px 500px rgba(F,F,F,0.5);*/
+    /*-webkit-box-shadow: 0 1px 500px rgba(F,F,F,0.5);*/
 
 
 }
@@ -218,8 +230,10 @@ a{
     height: 75px;
     position: relative;
 
-    background: #d9e5f1;
-    border: 8px solid #A1BDC3;
+    background: #dbdcdd;
+    border: 8px solid #c6c9d1;
+    border-radius: 4px;
+    border-right: none;
 }
 
 .f_content .input{
@@ -262,8 +276,10 @@ a{
     font-size: 15px;
     color: #FFFFFF;
 
-    background: #0166c4;
+    background: #8c8f97;
     border: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 .footer .button .submit:hover{
 
@@ -279,6 +295,8 @@ a{
 
     background: #060c4f;
     border: 2px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 .footer .button .submit1{
@@ -294,8 +312,10 @@ a{
     font-size: 15px;
     color: #FFFFFF;
 
-    background: #002678;
+    background: #5e6169;
     border: 0px;
+    border-top-right-radius: 4px ;
+    border-bottom-right-radius: 4px;
 }
 .footer .button .submit1:hover{
 
@@ -311,5 +331,7 @@ a{
 
     background: #060c4f;
     border: 2px;
+    border-top-right-radius: 4px ;
+    border-bottom-right-radius: 4px;
 }
 

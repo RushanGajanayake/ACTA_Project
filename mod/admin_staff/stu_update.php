@@ -40,7 +40,7 @@ class StuUpdate{
             $where1 = array('NIC'=>$nic);
 
             $values2 = array('DateOfBirth'=>$dob,'Company'=>$cmp_name ,'Office_address'=>$cmp_add,'Office_TelNo'=>$cmp_No,'Reg_Date'=>$reg_date,'Person_NIC'=>$nic,'Course_Course_ID'=>$c_ID);
-            $where2 = array('Student_ID'=>$stu_ID);
+            $where2 = array('Person_NIC'=>$nic);
 
             $this->upDate("person",$values1,$where1);
             $this->upDate("student",$values2,$where2);

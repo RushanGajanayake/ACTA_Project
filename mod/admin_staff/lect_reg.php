@@ -38,6 +38,8 @@ class Lec_reg{
 
             $this->add("person",$values1);
             $this->add("aca_staff",$values2);
+
+            include("../../view/admin_staff/lecture_reg.php");
         }
 
     }
@@ -50,8 +52,7 @@ class Lec_reg{
         $query_add = new mysqlQuery();
 
         if($query_add->insert($table,$values,$row=null)==true){
-            echo "data insert ";
-            include("../../view/admin_staff/lecture_reg.php");
+
         }
         else{
             echo "not insert";

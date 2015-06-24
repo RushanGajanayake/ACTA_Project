@@ -38,9 +38,11 @@ if($_POST['search']){
 
     </div>
     <div class="panel">
+    <div class="panel_body">
         <div class="panel_bar" >
             <p>Edit Course </p>
         </div>
+        <div class="panel_body_cont">
         <form action="/ACTA_project/mod/admin_staff/curs_add.php" method="post" id="cours_edit">
             <table class="table1">
                 <tr class="row1">
@@ -63,18 +65,32 @@ if($_POST['search']){
                     <td class="row_label">Administrator ID*</td>
                     <td class="input_data"><input class="input data" type="text" name="admin_id" id="admin_id" value="<?php echo $a_id;?>"></td> <!--this should be change as when admin id get from admin login session-->
                 </tr>
+            </table>
+            <table class="table2">
                 <tr class="row1">
                     <td class="row_label">Content and Details*</td>
-                    <td class="input_data"><textarea class="inputArea" name="c_details" id="c_details" rows="15" cols="30" ><?php echo $c_details;?></textarea> </td> <!-- words(500) if this rows, cols can be change -->
-                    <!--            <td><input type="text_area" name="c_details" id="c_details" style="height: 100px"></td>-->
+                    <td class="input_textarea"><textarea class="input" name="c_details" id="c_details" rows="15" cols="30" ><?php echo $c_details;?></textarea> </td> <!-- words(500) if this rows, cols can be change -->
                 </tr>
+            </table>
+            <table class="table1">
                 <tr>
-                    <td><input class="button1" type="button" name="edit_course" id="edit_course" value="Update" onclick="ajaxPost('/ACTA_project/mod/admin_staff/curs_add.php',$('#cours_edit').serialize()+'&edit_course=Update')"></td>
+                    <td><input class="button1_update" type="button" name="edit_course" id="edit_course" value="Update" onclick="ajaxPost('/ACTA_project/mod/admin_staff/curs_add.php',$('#cours_edit').serialize()+'&edit_course=Update')"></td>
+                    <td><input class="button1_delete" type="button" name="delete_course" id="delete_course" value="Delete" onclick="ajaxPost('/ACTA_project/mod/admin_staff/curs_add.php',$('#cours_edit').serialize()+'&delete_course=Delete')"></td>
+
                     <td></td>
                 </tr>
             </table>
         </form>
-        <button  class="button1" onclick="myFunction1('/ACTA_project/view/admin_staff/courses.php')">Back </button>
+
+        </div>
     </div>
+        <table class="table1">
+            <tr >
+                <td><button  class="button1" onclick="myFunction1('/ACTA_project/view/admin_staff/courses.php')">Back </button></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
 
 <?php } ?>

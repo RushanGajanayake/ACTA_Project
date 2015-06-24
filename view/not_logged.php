@@ -9,10 +9,10 @@
 
 <title>ACTA | LogIn</title>
 <link rel="stylesheet" href="/ACTA_project/res/css/login_style.css">
-<body>
+<body><img class="cover" src="/ACTA_project/res/image/cover8.png">
 <!-- login form -->
     <div class="login_form">
-        <form action="/ACTA_project/indx/index.php" method="post" name="login">
+        <form action="/ACTA_project/index.php" method="post" name="login">
             <div class="login">
                 <div class="login_h">
                     <div class="login_header">
@@ -48,7 +48,7 @@
                     </div>
                     <div class="footer_l">
                         <div class="setting">
-                            <img class="setpic" src="/ACTA_project/res/image/loging_setting.png"  height="25" width="25" >
+                            <img class="setpic" src="/ACTA_project/res/image/setting_icon.png"  height="25" width="25" >
                             <ul class="p">
                                 <li class="l"><a class="a" href="/ACTA_project/view/forgot_pass.php">Forgot Password</a></li>
                             </ul>

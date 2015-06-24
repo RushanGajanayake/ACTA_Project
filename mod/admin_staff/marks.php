@@ -68,6 +68,10 @@ class marks{
             <p>Manage Details  >  Marks </p>
             </div>
             <div class='panel' id='panel'>
+            <div class='panel_body'>
+            <div class='panel_bar' >
+            </div>
+            <div class='panel_body_cont'>
             <form action='/ACTA_project/mod/admin_staff/marks_enter.php' method='post' id='mrks_enter'>
             <table class='table1'>
             <tr class='row2'>
@@ -95,7 +99,8 @@ class marks{
 
             echo "</table></form>";
             $ajx = "myFunction1('/ACTA_project/view/admin_staff/marks_add.php')";
-            echo "<button class='button1' onclick=".$ajx.">Back </button> </div>";
+            $m= "javascript:checkEmpty_marks_adding();";
+            echo "</div></div><button class='button1' onclick=".$m.">Back </button> </div>";
 
             //$mkEnter = new marksEnter($stu_id_list);
 
